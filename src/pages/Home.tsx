@@ -1,14 +1,8 @@
 import { Link } from "react-router-dom"
 import { ArrowRight, ShieldCheck, ShieldAlert, Scale, ClipboardCheck, Cpu, GraduationCap } from "lucide-react"
 import SectionHeading from "../components/SectionHeading"
-import StatRow from "../components/StatRow"
-import {
-  expertiseAreas,
-  recommendations,
-  implementationStrategy,
-  courseTiers,
-  specialtyConsultingIntro,
-} from "../data/content"
+import { useLocale, useContent, useLocalizedLink } from "../LocaleContext"
+import { ui } from "../ui"
 import photo1 from "../assets/curs-gdpr-1.jpg"
 import photo2 from "../assets/curs-gdpr-2.jpg"
 
@@ -22,6 +16,11 @@ const icons: Record<string, typeof ShieldCheck> = {
 }
 
 export default function Home() {
+  const locale = useLocale()
+  const { expertiseAreas, recommendations, implementationStrategy, courseTiers, specialtyConsultingIntro } = useContent()
+  const t = ui[locale].home
+  const toLocale = useLocalizedLink()
+
   return (
     <div>
       {/* Hero */}
@@ -36,42 +35,32 @@ export default function Home() {
         />
         <div className="relative mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <p className="eyebrow text-gold-300">Securitate Cibernetică & Managementul Riscului</p>
+            <p className="eyebrow text-gold-300">{t.heroEyebrow}</p>
             <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.1] font-bold mt-2" style={{ fontFamily: "var(--font-display)" }}>
-              <span className="text-white block">Protejăm compania</span>
-              <span className="text-gold-400 block">de riscurile digitale de azi.</span>
+              <span className="text-white block">{t.heroTitleLine1}</span>
+              <span className="text-gold-400 block">{t.heroTitleLine2}</span>
             </h1>
             <div className="divider-gold" />
-            <p className="text-white/70 max-w-xl leading-relaxed">
-              Consultanță de specialitate în securitate cibernetică, guvernanță AI și managementul riscului — cu protecția datelor cu
-              caracter personal (GDPR), due diligence și consultanță juridică integrate în același model de conformitate. O experiență
-              dovedită din 2015.
-            </p>
+            <p className="text-white/70 max-w-xl leading-relaxed">{t.heroLede}</p>
             <div className="flex flex-wrap gap-4 mt-8">
-              <Link to="/audit" className="btn-gold">
-                Solicită un audit <ArrowRight size={16} />
+              <Link to={toLocale("/audit")} className="btn-gold">
+                {t.ctaAudit} <ArrowRight size={16} />
               </Link>
-              <Link to="/contact" className="btn-outline">
-                Contactează-ne
+              <Link to={toLocale("/contact")} className="btn-outline">
+                {t.ctaContact}
               </Link>
             </div>
           </div>
           <div className="relative hidden md:block">
             <div className="absolute -inset-3 border border-gold-500/30" />
-            <img
-              src={photo1}
-              alt="Sesiune de curs GDPR, cu participanți și prezentare a Regulamentului (UE) 2016/679"
-              className="relative w-full h-72 md:h-96 object-cover shadow-2xl"
-            />
+            <img src={photo1} alt={t.heroImgAlt} className="relative w-full h-72 md:h-96 object-cover shadow-2xl" />
           </div>
         </div>
-
-        <StatRow />
       </section>
 
       {/* Expertise grid */}
       <section className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-20">
-        <SectionHeading eyebrow="Ce facem" title="Securitate, Risc & Conformitate" />
+        <SectionHeading eyebrow={t.expertiseEyebrow} title={t.expertiseTitle} />
         <p className="max-w-3xl mx-auto text-center text-slate-700 leading-relaxed -mt-6 mb-2">{specialtyConsultingIntro}</p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
           {expertiseAreas.map((area) => {
@@ -79,7 +68,7 @@ export default function Home() {
             return (
               <Link
                 key={area.slug}
-                to={`/${area.slug}`}
+                to={toLocale(`/${area.slug}`)}
                 className="border border-navy-950/10 bg-white px-6 py-8 hover:border-gold-500/60 hover:shadow-md transition-all"
               >
                 <Icon className="text-gold-600 mb-4" size={30} strokeWidth={1.5} />
@@ -88,7 +77,7 @@ export default function Home() {
                 </h3>
                 <p className="text-sm text-slate-500 leading-relaxed">{area.summary}</p>
                 <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-gold-600 mt-4">
-                  Detalii <ArrowRight size={13} />
+                  {t.detailsLabel} <ArrowRight size={13} />
                 </span>
               </Link>
             )
@@ -100,7 +89,7 @@ export default function Home() {
       <section className="bg-paper-100 py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <SectionHeading eyebrow="De ce noi" title="Ce ne recomandă" center={false} />
+            <SectionHeading eyebrow={t.recommendationsEyebrow} title={t.recommendationsTitle} center={false} />
             <div className="grid sm:grid-cols-2 gap-6 mt-8">
               {recommendations.map((r) => (
                 <div key={r.title}>
@@ -112,18 +101,14 @@ export default function Home() {
           </div>
           <div className="relative">
             <div className="absolute -inset-3 border border-gold-500/30 hidden md:block" />
-            <img
-              src={photo2}
-              alt="Curs DPO — sesiune de formare pentru protecția datelor cu caracter personal"
-              className="relative w-full h-80 object-cover shadow-xl"
-            />
+            <img src={photo2} alt={t.recommendationsImgAlt} className="relative w-full h-80 object-cover shadow-xl" />
           </div>
         </div>
       </section>
 
       {/* Strategy */}
       <section className="mx-auto max-w-4xl px-5 md:px-8 py-16 md:py-20">
-        <SectionHeading eyebrow="Metodologie" title="Strategia implementării GDPR" />
+        <SectionHeading eyebrow={t.strategyEyebrow} title={t.strategyTitle} />
         <div className="mt-10 space-y-8">
           {implementationStrategy.map((s, i) => (
             <div key={s.title} className="flex gap-5">
@@ -142,7 +127,7 @@ export default function Home() {
       {/* Courses preview */}
       <section className="bg-navy-950 py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <SectionHeading eyebrow="Formare (LLL)" title="Program complet de formare DPO — GDPR" light />
+          <SectionHeading eyebrow={t.coursesEyebrow} title={t.coursesTitle} light />
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             {courseTiers.map((tier) => (
               <div key={tier.title} className="border border-white/15 px-6 py-8 hover:border-gold-400/60 transition-colors">
@@ -150,13 +135,12 @@ export default function Home() {
                 <h3 className="text-lg text-white font-bold mt-2" style={{ fontFamily: "var(--font-display)" }}>
                   {tier.title}
                 </h3>
-                <p className="tabular text-2xl font-bold text-gold-400 mt-1">{tier.price}</p>
               </div>
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link to="/cursuri" className="btn-gold">
-              Vezi toate cursurile <ArrowRight size={16} />
+            <Link to={toLocale("/cursuri")} className="btn-gold">
+              {t.viewAllCourses} <ArrowRight size={16} />
             </Link>
           </div>
         </div>
@@ -164,10 +148,10 @@ export default function Home() {
 
       {/* Closing CTA */}
       <section className="py-16 text-center bg-paper-50">
-        <h2 className="section-title">Ești interesat de oferta noastră pentru audit?</h2>
+        <h2 className="section-title">{t.closingTitle}</h2>
         <div className="mt-8">
-          <Link to="/contact" className="btn-navy">
-            Cerere ofertă <ArrowRight size={16} />
+          <Link to={toLocale("/contact")} className="btn-navy">
+            {t.closingCta} <ArrowRight size={16} />
           </Link>
         </div>
       </section>

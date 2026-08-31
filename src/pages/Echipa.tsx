@@ -1,15 +1,16 @@
 import PageHero from "../components/PageHero"
 import LegalProfile from "../components/LegalProfile"
-import { legalLead } from "../data/content"
+import { useLocale, useContent } from "../LocaleContext"
+import { ui } from "../ui"
 
 export default function Echipa() {
+  const locale = useLocale()
+  const { legalLead } = useContent()
+  const t = ui[locale].echipa
+
   return (
     <div>
-      <PageHero
-        eyebrow="Echipă"
-        title="Consultanță Juridică"
-        lede="Consultanță juridică oferită direct, cu experiență practică națională și internațională în drept comercial, insolvență și guvernanță."
-      />
+      <PageHero eyebrow={t.heroEyebrow} title={t.heroTitle} lede={t.heroLede} />
       <section className="mx-auto max-w-4xl px-5 py-16">
         <LegalProfile lead={legalLead} />
       </section>

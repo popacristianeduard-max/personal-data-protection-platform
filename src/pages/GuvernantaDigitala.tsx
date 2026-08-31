@@ -1,20 +1,21 @@
 import PageHero from "../components/PageHero"
 import SectionHeading from "../components/SectionHeading"
-import { digitalGovernanceIntro, aiActAreas, nis2Areas, governanceStandards, euResources } from "../data/content"
 import { ExternalLink } from "lucide-react"
+import { useLocale, useContent } from "../LocaleContext"
+import { ui } from "../ui"
 
 export default function GuvernantaDigitala() {
+  const locale = useLocale()
+  const { digitalGovernanceIntro, aiActAreas, nis2Areas, governanceStandards, euResources } = useContent()
+  const t = ui[locale].guvernantaDigitala
+
   return (
     <div>
-      <PageHero
-        eyebrow="Guvernanță AI & Risc"
-        title="Guvernanță Digitală & Managementul Riscului"
-        lede={digitalGovernanceIntro}
-      />
+      <PageHero eyebrow={t.heroEyebrow} title={t.heroTitle} lede={digitalGovernanceIntro} />
 
       <section className="mx-auto max-w-5xl px-5 py-16 grid md:grid-cols-2 gap-12">
         <div>
-          <SectionHeading eyebrow="Inteligență Artificială" title="AI Act" center={false} />
+          <SectionHeading eyebrow={t.aiEyebrow} title={t.aiTitle} center={false} />
           <ul className="mt-6 space-y-3">
             {aiActAreas.map((a) => (
               <li key={a} className="flex gap-3 text-sm leading-relaxed text-slate-700">
@@ -25,7 +26,7 @@ export default function GuvernantaDigitala() {
           </ul>
         </div>
         <div>
-          <SectionHeading eyebrow="Securitate Cibernetică" title="NIS2" center={false} />
+          <SectionHeading eyebrow={t.cyberEyebrow} title={t.cyberTitle} center={false} />
           <ul className="mt-6 space-y-3">
             {nis2Areas.map((a) => (
               <li key={a} className="flex gap-3 text-sm leading-relaxed text-slate-700">
@@ -39,7 +40,7 @@ export default function GuvernantaDigitala() {
 
       <section className="bg-paper-100 py-16">
         <div className="mx-auto max-w-5xl px-5">
-          <SectionHeading eyebrow="Standarde" title="Cadrul ISO de guvernanță și risc" />
+          <SectionHeading eyebrow={t.standardsEyebrow} title={t.standardsTitle} />
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mt-10">
             {governanceStandards.map((s) => (
               <div key={s.code} className="bg-white border border-navy-950/10 px-5 py-5">
@@ -52,10 +53,8 @@ export default function GuvernantaDigitala() {
       </section>
 
       <section className="mx-auto max-w-3xl px-5 py-16">
-        <SectionHeading eyebrow="Resurse" title="Repere legislative europene" />
-        <p className="mt-4 text-sm text-slate-500 text-center max-w-xl mx-auto leading-relaxed">
-          Textele oficiale pe care le monitorizăm și pe care ne întemeiem analiza juridică și tehnică.
-        </p>
+        <SectionHeading eyebrow={t.resourcesEyebrow} title={t.resourcesTitle} />
+        <p className="mt-4 text-sm text-slate-500 text-center max-w-xl mx-auto leading-relaxed">{t.resourcesBody}</p>
         <div className="mt-8 space-y-3">
           {euResources.map((r) => (
             <a

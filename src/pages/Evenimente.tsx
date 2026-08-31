@@ -1,20 +1,21 @@
 import PageHero from "../components/PageHero"
 import SectionHeading from "../components/SectionHeading"
-import { eventsHistory, eventPhotos } from "../data/content"
 import { CalendarDays } from "lucide-react"
+import { useLocale, useContent } from "../LocaleContext"
+import { ui } from "../ui"
 import photo1 from "../assets/curs-gdpr-1.jpg"
 import photo2 from "../assets/curs-gdpr-2.jpg"
 
 const photoMap: Record<string, string> = { "curs-gdpr-1": photo1, "curs-gdpr-2": photo2 }
 
 export default function Evenimente() {
+  const locale = useLocale()
+  const { eventsHistory, eventPhotos } = useContent()
+  const t = ui[locale].evenimente
+
   return (
     <div>
-      <PageHero
-        eyebrow="Evenimente"
-        title="Conferințe & workshop-uri"
-        lede="O selecție din evenimentele organizate de-a lungul timpului pentru comunitatea de specialiști GDPR și DPO din România."
-      />
+      <PageHero eyebrow={t.heroEyebrow} title={t.heroTitle} lede={t.heroLede} />
 
       <section className="mx-auto max-w-4xl px-5 py-16 space-y-14">
         {eventsHistory.map((ev) => (
@@ -45,10 +46,8 @@ export default function Evenimente() {
       {/* Proof gallery — real photos, evidence these sessions actually happened */}
       <section className="bg-navy-950 py-16">
         <div className="mx-auto max-w-6xl px-5">
-          <SectionHeading eyebrow="Dovezi" title="Fotografii din sală" light />
-          <p className="text-white/60 text-center max-w-xl mx-auto -mt-2 mb-2 text-sm">
-            Imagini reale din sesiunile noastre de formare, păstrate din arhiva evenimentelor.
-          </p>
+          <SectionHeading eyebrow={t.galleryEyebrow} title={t.galleryTitle} light />
+          <p className="text-white/60 text-center max-w-xl mx-auto -mt-2 mb-2 text-sm">{t.galleryBody}</p>
           <div className="grid sm:grid-cols-2 gap-6 mt-10">
             {eventPhotos.map((p) => (
               <figure key={p.file} className="relative">

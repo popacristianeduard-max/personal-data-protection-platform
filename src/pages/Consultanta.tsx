@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import PageHero from "../components/PageHero"
-import { consultancyCategories, gdprConsultingNote } from "../data/content"
+import { useLocale, useContent, useLocalizedLink } from "../LocaleContext"
+import { ui } from "../ui"
 
 export default function Consultanta() {
+  const locale = useLocale()
+  const { consultancyCategories, gdprConsultingNote } = useContent()
+  const t = ui[locale].consultanta
+  const toLocale = useLocalizedLink()
+
   return (
     <div>
-      <PageHero
-        eyebrow="Consultanță GDPR"
-        title="Conformitate cu Regulamentul (UE) 2016/679"
-        lede="Toate serviciile de consultanță oferite de experții noștri au ca scop optimizarea fluxurilor de date prelucrate și asigurarea conformității organizației cu prevederile Regulamentului (UE) 2016/679."
-      />
+      <PageHero eyebrow={t.heroEyebrow} title={t.heroTitle} lede={t.heroLede} />
       <section className="mx-auto max-w-5xl px-5 pt-16">
         <p className="text-center text-slate-700 leading-relaxed max-w-3xl mx-auto">{gdprConsultingNote}</p>
       </section>
@@ -35,26 +37,20 @@ export default function Consultanta() {
 
         <div className="mt-6 grid gap-4 sm:grid-cols-2">
           <Link
-            to="/guvernanta-digitala"
+            to={toLocale("/guvernanta-digitala")}
             className="border border-navy-950/10 bg-paper-100 p-6 hover:border-gold-500/60 transition-colors"
           >
-            <h3 className="text-sm font-bold text-navy-950 uppercase tracking-wide">Guvernanță Digitală & Risc</h3>
-            <p className="mt-2 text-sm leading-relaxed text-slate-700">
-              Extindem consultanța dincolo de datele cu caracter personal: AI Act, Directiva NIS2 și standardele ISO de guvernanță și
-              management al riscului.
-            </p>
+            <h3 className="text-sm font-bold text-navy-950 uppercase tracking-wide">{t.govCardTitle}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">{t.govCardBody}</p>
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-gold-600 mt-4">
-              Detalii <ArrowRight size={13} />
+              {t.detailsLabel} <ArrowRight size={13} />
             </span>
           </Link>
-          <Link to="/cursuri" className="border border-navy-950/10 bg-paper-100 p-6 hover:border-gold-500/60 transition-colors">
-            <h3 className="text-sm font-bold text-navy-950 uppercase tracking-wide">Training avansat, pe domenii de activitate</h3>
-            <p className="mt-2 text-sm leading-relaxed text-slate-700">
-              Programe de formare personalizate pentru HR, IT, sănătate, construcții, retail sau sectorul public, gândite să asigure
-              conformitatea și protecția reală a companiei.
-            </p>
+          <Link to={toLocale("/cursuri")} className="border border-navy-950/10 bg-paper-100 p-6 hover:border-gold-500/60 transition-colors">
+            <h3 className="text-sm font-bold text-navy-950 uppercase tracking-wide">{t.trainingCardTitle}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">{t.trainingCardBody}</p>
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-gold-600 mt-4">
-              Vezi programele <ArrowRight size={13} />
+              {t.viewProgramsLabel} <ArrowRight size={13} />
             </span>
           </Link>
         </div>
