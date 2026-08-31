@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  /* Personal Data Protection Group — deep navy + gold, legal/compliance identity */
+  --color-navy-950: #0a0d16;
+  --color-navy-900: #10141f;
+  --color-navy-800: #1a2032;
+  --color-navy-700: #262e47;
+  --color-gold-600: #a1791f;
+  --color-gold-500: #c9972e;
+  --color-gold-400: #dab35a;
+  --color-gold-300: #e8cd8c;
+  --color-paper-50: #faf8f4;
+  --color-paper-100: #f1ece0;
+  --color-slate-700: #3c4552;
+  --color-slate-500: #667080;
+
+  --font-display: "Sora", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper-50 text-navy-950 font-sans antialiased m-0;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: var(--color-gold-500);
+    color: var(--color-navy-950);
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-gold-600 tracking-[0.25em] uppercase text-xs font-semibold;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl text-navy-950 font-bold;
+    font-family: var(--font-display);
+  }
+
+  .divider-gold {
+    @apply w-16 h-1 bg-gold-500 my-4 rounded-full;
+  }
+
+  .divider-gold-center {
+    @apply w-16 h-1 bg-gold-500 mx-auto my-4 rounded-full;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 bg-gold-500 text-navy-950 px-6 py-3 text-sm font-bold uppercase tracking-wider hover:bg-gold-400 transition-colors rounded-sm;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border border-white/40 text-white px-6 py-3 text-sm font-bold uppercase tracking-wider hover:border-gold-400 hover:text-gold-300 transition-colors rounded-sm;
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center gap-2 bg-navy-900 text-white px-6 py-3 text-sm font-bold uppercase tracking-wider hover:bg-navy-800 transition-colors rounded-sm;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
