@@ -1,36 +1,42 @@
 import { Link } from "react-router-dom"
 import { Mail } from "lucide-react"
 import Logo from "./Logo"
-import { brand, contactChannels } from "../data/content"
+import { useLocale, useContent, localizePath } from "../LocaleContext"
+import { ui } from "../ui"
 
-const quickLinks = [
-  { to: "/it-security", label: "Securitate Cibernetică" },
-  { to: "/guvernanta-digitala", label: "Guvernanță AI & Risc" },
-  { to: "/audit", label: "Audit & Due Diligence" },
-  { to: "/consultanta", label: "Consultanță GDPR" },
-  { to: "/dpo", label: "DPO" },
-  { to: "/legal-juridic", label: "Juridic" },
-  { to: "/cursuri", label: "Formare (LLL)" },
-  { to: "/evenimente", label: "Evenimente" },
-  { to: "/confidentialitate", label: "Confidențialitate" },
-  { to: "/contact", label: "Contact" },
+const quickPaths = [
+  "/it-security",
+  "/guvernanta-digitala",
+  "/audit",
+  "/consultanta",
+  "/dpo",
+  "/legal-juridic",
+  "/cursuri",
+  "/evenimente",
+  "/confidentialitate",
+  "/contact",
 ]
 
 export default function Footer() {
+  const locale = useLocale()
+  const { brand, contactChannels } = useContent()
+  const t = ui[locale].footer
+
+  const quickLinks = quickPaths.map((path, i) => ({ to: localizePath(path, locale), label: t.links[i] }))
+
   return (
     <footer className="bg-navy-950 text-white">
       <div className="mx-auto max-w-7xl px-4 md:px-8 py-14 grid gap-10 md:grid-cols-3">
         <div>
           <Logo dark />
           <p className="mt-4 text-sm text-white/60 leading-relaxed max-w-xs">
-            {brand.motto}. Din {brand.since}, securitate cibernetică, guvernanță AI, managementul riscului, conformitate GDPR și
-            consultanță juridică pentru operatori de toate dimensiunile.
+            {brand.motto}. {t.aboutSuffix(brand.since)}
           </p>
         </div>
 
         <div>
           <h4 className="text-sm font-bold text-gold-300 mb-4 uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
-            Navigare
+            {t.navHeader}
           </h4>
           <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
             {quickLinks.map((item) => (
@@ -45,7 +51,7 @@ export default function Footer() {
 
         <div>
           <h4 className="text-sm font-bold text-gold-300 mb-4 uppercase tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
-            Departamente
+            {t.deptHeader}
           </h4>
           <ul className="space-y-3 text-sm text-white/70">
             {contactChannels.map((c) => (
@@ -65,7 +71,7 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-white/50">
-          <p>&copy; {new Date().getFullYear()} {brand.name}. Toate drepturile rezervate.</p>
+          <p>&copy; {new Date().getFullYear()} {brand.name}. {t.copyright}</p>
           <p className="italic text-gold-300/80">{brand.tagline}</p>
         </div>
       </div>

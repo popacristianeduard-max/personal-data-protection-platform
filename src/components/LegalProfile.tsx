@@ -1,6 +1,10 @@
 import type { LegalLead } from "../data/types"
+import { useLocale } from "../LocaleContext"
+import { ui } from "../ui"
 
 export default function LegalProfile({ lead }: { lead: LegalLead }) {
+  const locale = useLocale()
+  const t = ui[locale].legalProfile
   const initials = lead.name
     .split(" ")
     .map((p) => p[0])
@@ -24,7 +28,7 @@ export default function LegalProfile({ lead }: { lead: LegalLead }) {
       <div>
         <p className="text-slate-700 leading-relaxed">{lead.bio}</p>
 
-        <h4 className="mt-6 text-xs font-bold uppercase tracking-widest text-gold-600">Experiență</h4>
+        <h4 className="mt-6 text-xs font-bold uppercase tracking-widest text-gold-600">{t.experience}</h4>
         <ul className="mt-3 space-y-2.5">
           {lead.highlights.map((h) => (
             <li key={h} className="flex gap-3 text-sm leading-relaxed text-slate-700">
@@ -34,7 +38,7 @@ export default function LegalProfile({ lead }: { lead: LegalLead }) {
           ))}
         </ul>
 
-        <h4 className="mt-6 text-xs font-bold uppercase tracking-widest text-gold-600">Limbi străine</h4>
+        <h4 className="mt-6 text-xs font-bold uppercase tracking-widest text-gold-600">{t.languages}</h4>
         <div className="mt-3 flex flex-wrap gap-2">
           {lead.languages.map((l) => (
             <span key={l} className="border border-navy-950/10 bg-paper-100 px-3 py-1.5 text-xs font-medium text-navy-950/80">
