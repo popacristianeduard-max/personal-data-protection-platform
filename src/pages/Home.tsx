@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { ArrowRight, ShieldCheck, Scale, ClipboardCheck, Server, GraduationCap } from "lucide-react"
+import { ArrowRight, ShieldCheck, ShieldAlert, Scale, ClipboardCheck, Cpu, GraduationCap } from "lucide-react"
 import SectionHeading from "../components/SectionHeading"
 import StatRow from "../components/StatRow"
 import {
@@ -13,10 +13,11 @@ import photo1 from "../assets/curs-gdpr-1.jpg"
 import photo2 from "../assets/curs-gdpr-2.jpg"
 
 const icons: Record<string, typeof ShieldCheck> = {
+  "it-security": ShieldAlert,
+  "guvernanta-digitala": Cpu,
+  audit: ClipboardCheck,
   consultanta: ShieldCheck,
   "legal-juridic": Scale,
-  audit: ClipboardCheck,
-  "it-security": Server,
   cursuri: GraduationCap,
 }
 
@@ -35,16 +36,16 @@ export default function Home() {
         />
         <div className="relative mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <p className="eyebrow text-gold-300">Consultanță de specialitate</p>
+            <p className="eyebrow text-gold-300">Securitate Cibernetică & Managementul Riscului</p>
             <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] leading-[1.1] font-bold mt-2" style={{ fontFamily: "var(--font-display)" }}>
-              <span className="text-white block">Conformitate și protecție,</span>
-              <span className="text-gold-400 block">într-un singur partener.</span>
+              <span className="text-white block">Protejăm compania</span>
+              <span className="text-gold-400 block">de riscurile digitale de azi.</span>
             </h1>
             <div className="divider-gold" />
             <p className="text-white/70 max-w-xl leading-relaxed">
-              Consultanță de specialitate integrată — protecția datelor cu caracter personal, guvernanță digitală (AI Act, NIS2, ISO) și
-              programe avansate de training adaptate domeniului dumneavoastră de activitate. Un singur obiectiv: asigurarea conformității
-              și protecția companiei dumneavoastră.
+              Consultanță de specialitate în securitate cibernetică, guvernanță AI și managementul riscului — cu protecția datelor cu
+              caracter personal (GDPR), due diligence și consultanță juridică integrate în același model de conformitate. O experiență
+              dovedită din 2015.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
               <Link to="/audit" className="btn-gold">
@@ -70,7 +71,7 @@ export default function Home() {
 
       {/* Expertise grid */}
       <section className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-20">
-        <SectionHeading eyebrow="Ce facem" title="Consultanță de specialitate" />
+        <SectionHeading eyebrow="Ce facem" title="Securitate, Risc & Conformitate" />
         <p className="max-w-3xl mx-auto text-center text-slate-700 leading-relaxed -mt-6 mb-2">{specialtyConsultingIntro}</p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
           {expertiseAreas.map((area) => {
@@ -141,7 +142,7 @@ export default function Home() {
       {/* Courses preview */}
       <section className="bg-navy-950 py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <SectionHeading eyebrow="Formare" title="Cursuri GDPR — DPO" light />
+          <SectionHeading eyebrow="Formare (LLL)" title="Program complet de formare DPO — GDPR" light />
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             {courseTiers.map((tier) => (
               <div key={tier.title} className="border border-white/15 px-6 py-8 hover:border-gold-400/60 transition-colors">

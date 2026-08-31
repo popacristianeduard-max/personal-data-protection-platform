@@ -4,11 +4,13 @@ import Logo from "./Logo"
 import { brand, contactChannels } from "../data/content"
 
 const quickLinks = [
+  { to: "/it-security", label: "Securitate Cibernetică" },
+  { to: "/guvernanta-digitala", label: "Guvernanță AI & Risc" },
+  { to: "/audit", label: "Audit & Due Diligence" },
   { to: "/consultanta", label: "Consultanță GDPR" },
-  { to: "/audit", label: "Audit" },
   { to: "/dpo", label: "DPO" },
   { to: "/legal-juridic", label: "Juridic" },
-  { to: "/cursuri", label: "Cursuri" },
+  { to: "/cursuri", label: "Formare (LLL)" },
   { to: "/evenimente", label: "Evenimente" },
   { to: "/confidentialitate", label: "Confidențialitate" },
   { to: "/contact", label: "Contact" },
@@ -21,8 +23,8 @@ export default function Footer() {
         <div>
           <Logo dark />
           <p className="mt-4 text-sm text-white/60 leading-relaxed max-w-xs">
-            {brand.motto}. Din {brand.since}, conformitate GDPR, consultanță juridică și securitate IT pentru operatori de toate
-            dimensiunile.
+            {brand.motto}. Din {brand.since}, securitate cibernetică, guvernanță AI, managementul riscului, conformitate GDPR și
+            consultanță juridică pentru operatori de toate dimensiunile.
           </p>
         </div>
 

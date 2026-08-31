@@ -28,7 +28,7 @@ export default function Logo({ dark = false, compact = false }: { dark?: boolean
         </div>
         {!compact && (
           <div className={`text-[9px] md:text-[10px] tracking-[0.15em] uppercase ${dark ? "text-gold-300" : "text-gold-600"}`}>
-            GDPR · LEGAL · IT SECURITY
+            CYBERSECURITY · AI · RISK · GDPR
           </div>
         )}
       </div>

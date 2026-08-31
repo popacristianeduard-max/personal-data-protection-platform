@@ -1,6 +1,13 @@
 import PageHero from "../components/PageHero"
 import SectionHeading from "../components/SectionHeading"
-import { courseTiers, courseCurriculum, eventPhotos, sectorTrainingPrograms } from "../data/content"
+import {
+  courseTiers,
+  courseCurriculum,
+  eventPhotos,
+  sectorTrainingPrograms,
+  courseTracks,
+  lifelongLearningIntro,
+} from "../data/content"
 import { Link } from "react-router-dom"
 import photo1 from "../assets/curs-gdpr-1.jpg"
 import photo2 from "../assets/curs-gdpr-2.jpg"
@@ -11,13 +18,27 @@ export default function Cursuri() {
   return (
     <div>
       <PageHero
-        eyebrow="Cursuri & Seminarii"
-        title="Cursuri și seminarii GDPR — DPO"
-        lede="Cursul se adresează persoanelor responsabile în cadrul organizației de a respecta Regulamentul General privind Protecția Datelor."
+        eyebrow="Formare Profesională Continuă · Profil LLL"
+        title="Cursuri & programe de formare"
+        lede="Securitate cibernetică, guvernanța inteligenței artificiale și managementul riscului — cu protecția datelor cu caracter personal ca modul integrat, nu unic."
       />
 
+      <section className="mx-auto max-w-6xl px-5 pt-16">
+        <SectionHeading eyebrow="Model de formare" title="Profil Lifelong Learning (LLL)" />
+        <p className="max-w-3xl mx-auto text-center text-slate-700 leading-relaxed -mt-6 mb-2">{lifelongLearningIntro}</p>
+        <div className="grid sm:grid-cols-2 gap-6 mt-10">
+          {courseTracks.map((t) => (
+            <div key={t.title} className="border border-navy-950/10 bg-white p-6">
+              <h3 className="text-sm font-bold text-navy-950 uppercase tracking-wide">{t.title}</h3>
+              <p className="mt-2.5 text-sm leading-relaxed text-slate-700">{t.body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-5 py-16">
-        <div className="grid gap-6 lg:grid-cols-3">
+        <SectionHeading eyebrow="Track GDPR" title="Program complet de formare DPO — module și tarife" className="mb-2" />
+        <div className="grid gap-6 lg:grid-cols-3 mt-10">
           {courseTiers.map((tier) => (
             <div key={tier.title} className="flex flex-col border border-navy-950/10 bg-white p-6">
               <span className="eyebrow">{tier.label}</span>

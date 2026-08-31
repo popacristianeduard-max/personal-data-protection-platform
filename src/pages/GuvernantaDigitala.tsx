@@ -7,7 +7,7 @@ export default function GuvernantaDigitala() {
   return (
     <div>
       <PageHero
-        eyebrow="Conformitate Avansată 2026"
+        eyebrow="Guvernanță AI & Risc"
         title="Guvernanță Digitală & Managementul Riscului"
         lede={digitalGovernanceIntro}
       />

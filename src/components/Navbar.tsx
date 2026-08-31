@@ -4,14 +4,14 @@ import { Menu, X } from "lucide-react"
 import Logo from "./Logo"
 
 const navLinks = [
-  { to: "/consultanta", label: "Consultanță de specialitate" },
-  { to: "/audit", label: "Audit" },
+  { to: "/it-security", label: "Securitate Cibernetică" },
+  { to: "/guvernanta-digitala", label: "Guvernanță AI & Risc" },
+  { to: "/audit", label: "Audit & Due Diligence" },
+  { to: "/consultanta", label: "Consultanță GDPR" },
   { to: "/dpo", label: "DPO" },
   { to: "/legal-juridic", label: "Juridic" },
-  { to: "/it-security", label: "IT Security" },
-  { to: "/cursuri", label: "Cursuri" },
+  { to: "/cursuri", label: "Formare (LLL)" },
   { to: "/evenimente", label: "Evenimente" },
-  { to: "/guvernanta-digitala", label: "Guvernanță Digitală" },
   { to: "/echipa", label: "Echipă" },
 ]
 

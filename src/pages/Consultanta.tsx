@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import PageHero from "../components/PageHero"
-import { consultancyCategories, specialtyConsultingIntro } from "../data/content"
+import { consultancyCategories, gdprConsultingNote } from "../data/content"
 
 export default function Consultanta() {
   return (
     <div>
       <PageHero
-        eyebrow="Consultanță de specialitate"
+        eyebrow="Consultanță GDPR"
         title="Conformitate cu Regulamentul (UE) 2016/679"
         lede="Toate serviciile de consultanță oferite de experții noștri au ca scop optimizarea fluxurilor de date prelucrate și asigurarea conformității organizației cu prevederile Regulamentului (UE) 2016/679."
       />
       <section className="mx-auto max-w-5xl px-5 pt-16">
-        <p className="text-center text-slate-700 leading-relaxed max-w-3xl mx-auto">{specialtyConsultingIntro}</p>
+        <p className="text-center text-slate-700 leading-relaxed max-w-3xl mx-auto">{gdprConsultingNote}</p>
       </section>
       <section className="mx-auto max-w-5xl px-5 py-16">
         <div className="grid gap-6 md:grid-cols-2">

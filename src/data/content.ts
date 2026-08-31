@@ -1,6 +1,6 @@
 export const brand = {
   name: "Personal Data Protection Group",
-  tagline: "GDPR — LEGAL — IT SECURITY CONSULTING",
+  tagline: "CYBERSECURITY — AI GOVERNANCE — RISK — GDPR — LEGAL",
   motto: "Asigurăm securitatea companiei dumneavoastră",
   email: "office@personaldataprotection.ro",
   since: 2015,
@@ -13,10 +13,15 @@ export const stats = [
   { value: "2000+", label: "cursanți pregătiți" },
 ]
 
-// Poziționare centrală: consultanță de specialitate multidisciplinară (GDPR + guvernanță
-// digitală + training avansat), cu un singur obiectiv — conformitatea și protecția companiei.
+// Poziționare centrală (2026): securitate cibernetică, guvernanță AI și managementul riscului —
+// direcția principală a grupului — cu protecția datelor cu caracter personal (GDPR) integrată
+// ca element de conformitate, nu ca obiectiv unic. Construită pe aceeași experiență reală de peste
+// un deceniu (fondat 2015).
 export const specialtyConsultingIntro =
-  "Consultanță de specialitate oferită integrat, nu pe bucăți: protecția datelor cu caracter personal, guvernanță digitală (AI Act, NIS2, standarde ISO) și programe avansate de training, adaptate domeniului de activitate al fiecărei organizații. Un singur model de lucru, cu un singur obiectiv — asigurarea conformității și protecția companiei dumneavoastră."
+  "Consultanță de specialitate în securitate cibernetică, guvernanță a inteligenței artificiale și managementul riscului — cu protecția datelor cu caracter personal (GDPR), due diligence și consultanță juridică integrate în același model de conformitate. O singură echipă, o singură strategie de protecție a companiei dumneavoastră, construită pe o experiență dovedită din 2015."
+
+export const gdprConsultingNote =
+  "Conformitatea cu Regulamentul (UE) 2016/679 rămâne o componentă esențială a modelului nostru de conformitate — integrată în practica de securitate cibernetică și managementul riscului, nu tratată izolat."
 
 export const sectorTrainingPrograms = [
   {
@@ -47,10 +52,28 @@ export const sectorTrainingPrograms = [
 
 export const expertiseAreas = [
   {
-    slug: "consultanta",
-    title: "Consultanță de specialitate",
+    slug: "it-security",
+    title: "Securitate Cibernetică & AI",
     summary:
-      "Consultanță GDPR integrată cu guvernanță digitală și programe de training adaptate domeniului de activitate — de la evidența prelucrărilor de date la conformitatea AI Act și NIS2.",
+      "Evaluarea vulnerabilităților, detecția amenințărilor, răspuns la incidente și securitatea sistemelor de inteligență artificială — pentru infrastructuri reziliente în fața amenințărilor digitale actuale.",
+  },
+  {
+    slug: "guvernanta-digitala",
+    title: "Guvernanță Digitală & Risc",
+    summary:
+      "AI Act, Directiva NIS2 și standardele ISO/IEC 27001, 22301 și 31000, integrate într-un model unic de guvernanță și conformitate pentru organizația dumneavoastră.",
+  },
+  {
+    slug: "audit",
+    title: "Audit & Due Diligence",
+    summary:
+      "Audit de securitate și conformitate, plus due diligence juridic, financiar, IT și de protecție a datelor pentru tranzacții, fuziuni și parteneriate.",
+  },
+  {
+    slug: "consultanta",
+    title: "Consultanță GDPR",
+    summary:
+      "Întocmirea evidenței prelucrărilor de date personale și a registrului privind prelucrările de date cu caracter personal, verificat de ANSPDCP — integrată în modelul de conformitate al grupului.",
   },
   {
     slug: "legal-juridic",
@@ -59,28 +82,10 @@ export const expertiseAreas = [
       "Experți cu experiență internațională dobândită prin negocierea intereselor statului român și ale societăților comerciale, locale și străine.",
   },
   {
-    slug: "audit",
-    title: "Audit GDPR",
-    summary:
-      "Asistență în elaborarea și implementarea procedurilor și politicilor aplicate tuturor categoriilor de date cu caracter personal, în vederea conformării la Regulamentul (UE) 2016/679.",
-  },
-  {
-    slug: "it-security",
-    title: "Consultanță IT",
-    summary:
-      "Analiza nevoilor reale ale clientului și recomandarea soluției IT potrivite, de la infrastructură la securitatea sistemelor.",
-  },
-  {
     slug: "cursuri",
-    title: "Cursuri GDPR",
+    title: "Formare Profesională Continuă",
     summary:
-      "Cursuri adresate persoanelor responsabile în cadrul organizației de a respecta Regulamentul General privind Protecția Datelor.",
-  },
-  {
-    slug: "guvernanta-digitala",
-    title: "Guvernanță Digitală & Risc",
-    summary:
-      "AI Act, Directiva NIS2 și standardele ISO/IEC 27001, 22301 și 31000, integrate într-un model unic de guvernanță și conformitate pentru organizația dumneavoastră.",
+      "Programe de formare (profil Lifelong Learning) în securitate cibernetică, guvernanța AI, managementul riscului și protecția datelor — adaptate domeniului de activitate al fiecărui client.",
   },
 ]
 
@@ -181,6 +186,32 @@ export const auditStages = [
   "Elaborarea politicii de notificare a Autorității de Supraveghere (ANSPDCP) în cazul unui incident de securitate.",
   "Elaborarea Raportului de Evaluare privind gradul de conformitate al operatorului.",
   "Asistență în implementarea soluțiilor de remediere a vulnerabilităților identificate.",
+]
+
+export const dueDiligenceIntro =
+  "Dincolo de auditul de conformitate, grupul asistă tranzacții, fuziuni și parteneriate printr-un proces de due diligence multidisciplinar — juridic, financiar, IT și de protecție a datelor — care expune riscurile reale înainte ca acestea să devină ale dumneavoastră."
+
+export const dueDiligenceAreas = [
+  {
+    title: "Due diligence juridic",
+    body: "Verificarea structurii corporative, a contractelor semnificative, litigiilor în curs și a conformității cu legislația aplicabilă domeniului de activitate.",
+  },
+  {
+    title: "Due diligence financiar",
+    body: "Analiza situațiilor financiare, a riscurilor fiscale și a angajamentelor contractuale cu impact economic asupra tranzacției.",
+  },
+  {
+    title: "Due diligence IT & securitate cibernetică",
+    body: "Evaluarea infrastructurii tehnice, a vulnerabilităților cunoscute și a istoricului de incidente de securitate ale țintei tranzacției.",
+  },
+  {
+    title: "Due diligence privind protecția datelor",
+    body: "Verificarea conformității GDPR a țintei — evidențele de prelucrare, temeiurile legale și eventualele incidente de securitate a datelor raportate.",
+  },
+  {
+    title: "Managementul riscului asociat furnizorilor și partenerilor (third-party risk)",
+    body: "Evaluarea riscurilor operaționale, contractuale și de securitate asociate colaboratorilor și lanțului de furnizori.",
+  },
 ]
 
 export const consultancyCategories = [
@@ -392,6 +423,42 @@ export const itSecurityDomains = [
   "Sistemele de comunicații",
   "Aplicații specifice",
   "Instruire și/sau recrutare personal specializat",
+]
+
+// Direcția principală a grupului din 2026: securitate cibernetică, AI și managementul riscului.
+export const cyberSecurityCapabilities = [
+  "Evaluarea vulnerabilităților și testarea rezistenței infrastructurii IT (vulnerability assessment)",
+  "Detecția amenințărilor și monitorizarea continuă a sistemelor",
+  "Răspuns la incidente și gestionarea breșelor de securitate",
+  "Securitatea sistemelor de inteligență artificială și a modelelor utilizate în organizație",
+  "Managementul riscului cibernetic și al furnizorilor terți (third-party risk)",
+  "Planuri de continuitate a activității și recuperare în caz de dezastru",
+  "Politici de securitate a informației și instruirea personalului",
+  "Conformitate cu Directiva NIS2 și standardele ISO/IEC 27001",
+]
+
+// Profil de formare profesională continuă (Lifelong Learning – LLL): module structurate, ore
+// alocate clar, aplicații practice și certificat de participare, adaptabile fiecărei organizații.
+export const lifelongLearningIntro =
+  "Programele de formare urmează un profil de formare profesională continuă (Lifelong Learning – LLL): module structurate pe competențe, ore alocate clar, aplicații practice și certificat de participare — acoperind securitatea cibernetică, guvernanța AI și managementul riscului, cu protecția datelor cu caracter personal ca modul integrat, nu unic."
+
+export const courseTracks = [
+  {
+    title: "Securitate Cibernetică & Managementul Incidentelor",
+    body: "Fundamentele securității cibernetice, recunoașterea amenințărilor, procedurile de răspuns la incidente și obligațiile de raportare conform Directivei NIS2.",
+  },
+  {
+    title: "Guvernanța Inteligenței Artificiale",
+    body: "Clasificarea sistemelor de IA pe niveluri de risc, obligațiile AI Act, evaluarea impactului asupra drepturilor fundamentale și politici interne de utilizare responsabilă.",
+  },
+  {
+    title: "Managementul Riscului & Due Diligence",
+    body: "Metodologii de evaluare a riscului operațional, financiar și cibernetic, aplicate în procesele de due diligence și guvernanță corporativă.",
+  },
+  {
+    title: "Protecția Datelor cu Caracter Personal (GDPR)",
+    body: "Programul complet de formare DPO și specialiști GDPR — module, curriculum și tarife disponibile mai jos.",
+  },
 ]
 
 export const courseTiers = [
