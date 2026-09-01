@@ -1,6 +1,5 @@
 import PageHero from "../components/PageHero"
 import SectionHeading from "../components/SectionHeading"
-import NumberedList from "../components/NumberedList"
 import { Link } from "react-router-dom"
 import { ArrowRight, ShieldCheck, Users, Clock, Receipt, Languages, Lock } from "lucide-react"
 import { useLocale, useContent, useLocalizedLink } from "../LocaleContext"
@@ -11,7 +10,6 @@ const differentiatorIcons = [Users, ShieldCheck, Clock, Receipt, Languages, Lock
 export default function Audit() {
   const locale = useLocale()
   const {
-    auditStages,
     dueDiligenceIntro,
     dueDiligenceForeignNote,
     dueDiligenceAudience,
@@ -22,8 +20,6 @@ export default function Audit() {
   } = useContent()
   const t = ui[locale].audit
   const toLocale = useLocalizedLink()
-
-  const stageItems = auditStages.map((s, i) => ({ title: `${t.stagePrefix} ${i + 1}`, body: s }))
 
   return (
     <div>
@@ -105,13 +101,9 @@ export default function Audit() {
         </div>
       </section>
 
-      {/* Related service: GDPR compliance audit methodology */}
+      {/* CTA */}
       <section className="mx-auto max-w-3xl px-5 py-16">
-        <SectionHeading eyebrow={t.complianceEyebrow} title={t.complianceTitle} center={false} />
-        <div className="mt-10">
-          <NumberedList items={stageItems} />
-        </div>
-        <div className="mt-12 bg-navy-950 p-8 text-center">
+        <div className="bg-navy-950 p-8 text-center">
           <p className="text-sm text-white/80">{t.ctaText}</p>
           <Link to={toLocale("/contact")} className="btn-gold mt-4 inline-flex">
             {t.ctaButton} <ArrowRight size={16} />

@@ -1,14 +1,17 @@
 import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import PageHero from "../components/PageHero"
+import SectionHeading from "../components/SectionHeading"
+import NumberedList from "../components/NumberedList"
 import { useLocale, useContent, useLocalizedLink } from "../LocaleContext"
 import { ui } from "../ui"
 
 export default function Consultanta() {
   const locale = useLocale()
-  const { consultancyCategories, gdprConsultingNote } = useContent()
+  const { consultancyCategories, gdprConsultingNote, auditStages } = useContent()
   const t = ui[locale].consultanta
   const toLocale = useLocalizedLink()
+  const stageItems = auditStages.map((s, i) => ({ title: `${t.stagePrefix} ${i + 1}`, body: s }))
 
   return (
     <div>
@@ -35,7 +38,12 @@ export default function Consultanta() {
           ))}
         </div>
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+        <SectionHeading eyebrow={t.methodologyEyebrow} title={t.methodologyTitle} center={false} className="mt-16" />
+        <div className="mt-10">
+          <NumberedList items={stageItems} />
+        </div>
+
+        <div className="mt-16 grid gap-4 sm:grid-cols-2">
           <Link
             to={toLocale("/guvernanta-digitala")}
             className="border border-navy-950/10 bg-paper-100 p-6 hover:border-gold-500/60 transition-colors"
