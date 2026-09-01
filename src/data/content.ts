@@ -1,7 +1,7 @@
 export const brand = {
   name: "Personal Data Protection Group",
   tagline: "CYBERSECURITY — AI GOVERNANCE — RISK — GDPR — LEGAL",
-  motto: "Asigurăm securitatea companiei dumneavoastră",
+  motto: "Asigurăm reziliența companiilor naționale și internaționale",
   email: "office@personaldataprotection.ro",
   since: 2015,
 }
@@ -125,7 +125,7 @@ export const servicesOverview = [
     slug: "audit",
     title: "Audit & Due Diligence",
     description:
-      "Due diligence de tranzacție pentru achiziții și intrarea pe piața din România — juridic, financiar, fiscal, IT și protecția datelor — condus de o echipă multidisciplinară, gândit ca alternativă credibilă la marile firme de consultanță (Big Four).",
+      "Due diligence de tranzacție pentru achiziții și intrarea pe piața din România — juridic, financiar, fiscal, IT și protecția datelor — condus de o echipă multidisciplinară care asigură, din 2015, reziliența companiilor naționale și internaționale.",
     highlights: [
       "Due diligence juridic & corporativ",
       "Due diligence financiar",
