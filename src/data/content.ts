@@ -82,6 +82,95 @@ export const expertiseAreas = [
   },
 ]
 
+// Portofoliul complet de servicii, pentru pagina /servicii — descrieri și repere extrase și
+// condensate din conținutul real al fiecărei pagini de serviciu (fără informații noi, inventate).
+export const servicesOverview = [
+  {
+    slug: "it-security",
+    title: "Securitate Cibernetică & AI",
+    description:
+      "Evaluăm, testăm și consolidăm rezistența infrastructurii IT în fața amenințărilor cibernetice actuale — de la vulnerabilitățile clasice de infrastructură, la riscurile specifice sistemelor de inteligență artificială.",
+    highlights: [
+      "Evaluarea vulnerabilităților (vulnerability assessment)",
+      "Detecție și răspuns la incidente de securitate",
+      "Securitatea sistemelor de inteligență artificială",
+      "Planuri de continuitate și recuperare în caz de dezastru",
+    ],
+  },
+  {
+    slug: "guvernanta-digitala",
+    title: "Guvernanță Digitală & Risc",
+    description:
+      "Un pilon distinct al practicii noastre, cu propria echipă și metodologie: AI Act, Directiva NIS2 și standardele ISO de guvernanță și management al riscului, integrate într-un singur model operațional.",
+    highlights: [
+      "Clasificarea sistemelor de IA pe niveluri de risc (AI Act)",
+      "Evaluarea obligațiilor NIS2 pe sector și dimensiune",
+      "Certificare și conformitate ISO/IEC 27001, 42001, 31000",
+      "Guvernanța furnizorilor și a lanțului de aprovizionare digital",
+    ],
+  },
+  {
+    slug: "audit",
+    title: "Audit & Due Diligence",
+    description:
+      "Due diligence de tranzacție pentru achiziții și intrarea pe piața din România — juridic, financiar, fiscal, IT și protecția datelor — condus de o echipă multidisciplinară, gândit ca alternativă credibilă la marile firme de consultanță (Big Four).",
+    highlights: [
+      "Due diligence juridic & corporativ",
+      "Due diligence financiar",
+      "Due diligence IT & securitate cibernetică",
+      "Due diligence privind protecția datelor (GDPR)",
+    ],
+  },
+  {
+    slug: "consultanta",
+    title: "Consultanță GDPR",
+    description:
+      "Conformitatea cu Regulamentul (UE) 2016/679 rămâne o componentă esențială a modelului nostru — de la evidența prelucrărilor de date, la politicile interne și desemnarea Responsabilului cu Protecția Datelor, verificate de ANSPDCP.",
+    highlights: [
+      "Evaluare și mapare a datelor cu caracter personal",
+      "Conformitate legală și contractuală",
+      "Guvernanță și proceduri interne",
+      "Registrul de evidență a prelucrărilor, verificat ANSPDCP",
+    ],
+  },
+  {
+    slug: "dpo",
+    title: "Data Protection Officer",
+    description:
+      "Desemnăm un Responsabil cu Protecția Datelor dedicat, cu garanții depline de independență — de la supravegherea strategiei de conformitate, la notificarea autorității de supraveghere în cel mult 72 de ore de la o încălcare a securității datelor.",
+    highlights: [
+      "DPO intern sau extern, la alegere",
+      "Punct de contact cu ANSPDCP",
+      "Soluționarea plângerilor persoanelor vizate",
+      "Audit periodic al fluxurilor de date",
+    ],
+  },
+  {
+    slug: "legal-juridic",
+    title: "Consultanță Juridică",
+    description:
+      "Departament juridic coordonat de un avocat cu peste 25 de ani de experiență la cel mai înalt nivel, cu o carieră construită în jurul negocierii intereselor statului român și ale societăților comerciale, locale și internaționale.",
+    highlights: [
+      "Corporate, fuziuni, achiziții & privatizări",
+      "Insolvență și restructurare",
+      "Litigii și arbitraj",
+      "Tehnologie, IT & Protecția Datelor",
+    ],
+  },
+  {
+    slug: "cursuri",
+    title: "Formare Profesională Continuă",
+    description:
+      "Programe de formare profesională continuă (profil Lifelong Learning), cu module structurate pe competențe — securitate cibernetică, guvernanța AI, managementul riscului și protecția datelor — și certificat de participare.",
+    highlights: [
+      "Securitate Cibernetică & Managementul Incidentelor",
+      "Guvernanța Inteligenței Artificiale",
+      "Managementul Riscului & Due Diligence",
+      "Protecția Datelor cu Caracter Personal (GDPR)",
+    ],
+  },
+]
+
 // Conformitate avansată 2026 — AI Act, NIS2, standarde ISO de guvernanță și risc.
 // Conținut generic, derivat din practica proprie de consultanță; fără referiri la clienți.
 export const digitalGovernanceIntro =
@@ -367,7 +456,7 @@ export const dpoDescription = {
 // IT Security) — conținut real, extras integral din CV-ul furnizat, extins pe fiecare arie de practică.
 // Fără date de contact personale (telefon/email privat) — se folosește exclusiv canalul juridic@personaldataprotection.ro.
 export const legalLead = {
-  name: "Ruxandra Costea-Comanici",
+  name: "Ruxandra Costea",
   title: "Avocat · Coordonator Departament Juridic",
   credential: "Membră a Baroului București din noiembrie 2004 · peste 25 de ani de experiență în drept și insolvență",
   tagline: "Powered by experience, sustained by results.",
@@ -400,6 +489,8 @@ export const legalAreas = [
   "Achiziții publice și concurență",
   "Dreptul muncii",
   "Proprietate intelectuală",
+  "Drept IT & Tehnologie",
+  "Protecția datelor & confidențialitate",
   "Dreptul imobiliar și urbanism",
   "Litigii civile, comerciale și arbitraj",
   "Drept administrativ și instituțional",
@@ -407,7 +498,7 @@ export const legalAreas = [
 ]
 
 // Arii de practică ale Departamentului Juridic — structurate pe domenii, coordonate de
-// Ruxandra Costea-Comanici, cu sprijinul colaboratorilor grupului pe fiecare linie de expertiză.
+// Ruxandra Costea, cu sprijinul colaboratorilor grupului pe fiecare linie de expertiză.
 export const legalDepartments = [
   {
     title: "Corporate, Fuziuni, Achiziții & Privatizări",
@@ -440,6 +531,10 @@ export const legalDepartments = [
   {
     title: "Drept European & Politici de Concurență",
     body: "Consultanță pe legislație și politici europene, aplicarea directivelor UE relevante și corelarea acestora cu cadrul legislativ național, sprijinită de un Master în Studii Europene la Universitatea din Maastricht.",
+  },
+  {
+    title: "Tehnologie, IT & Protecția Datelor",
+    body: "Consiliere juridică pentru proiecte și tranzacții cu componentă tehnologică — contracte IT, licențiere software, proprietate intelectuală digitală și conformitate GDPR — în strânsă colaborare cu Departamentul GDPR și Departamentul IT Security ale grupului, pentru un punct unic de răspundere juridică, tehnică și de conformitate.",
   },
 ]
 

@@ -78,6 +78,95 @@ export const expertiseAreas = [
   },
 ]
 
+// Full service portfolio, for the /services page — descriptions and highlights condensed
+// from the real content already on each service's own page (no new, invented information).
+export const servicesOverview = [
+  {
+    slug: "it-security",
+    title: "Cybersecurity & AI",
+    description:
+      "We assess, test and strengthen the resilience of your IT infrastructure against today's cyber threats — from classic infrastructure vulnerabilities to the risks specific to artificial intelligence systems.",
+    highlights: [
+      "Vulnerability assessment",
+      "Threat detection and incident response",
+      "Security of artificial intelligence systems",
+      "Business continuity and disaster recovery plans",
+    ],
+  },
+  {
+    slug: "guvernanta-digitala",
+    title: "Digital Governance & Risk",
+    description:
+      "A distinct pillar of our practice, with its own team and methodology: the AI Act, the NIS2 Directive and the ISO governance and risk management standards, integrated into a single operational model.",
+    highlights: [
+      "Classifying AI systems by risk level (AI Act)",
+      "Assessing NIS2 obligations by sector and size",
+      "ISO/IEC 27001, 42001, 31000 certification and compliance",
+      "Governance of suppliers and the digital supply chain",
+    ],
+  },
+  {
+    slug: "audit",
+    title: "Audit & Due Diligence",
+    description:
+      "Transaction due diligence for acquisitions and market entry into Romania — legal, financial, tax, IT and data protection — led by a multidisciplinary team, built as a credible alternative to the large consulting firms (Big Four).",
+    highlights: [
+      "Legal & corporate due diligence",
+      "Financial due diligence",
+      "IT & cybersecurity due diligence",
+      "Data protection (GDPR) due diligence",
+    ],
+  },
+  {
+    slug: "consultanta",
+    title: "GDPR Consulting",
+    description:
+      "Compliance with Regulation (EU) 2016/679 remains an essential component of our model — from the record of processing activities, to internal policies and the appointment of a Data Protection Officer, verified against the Romanian DPA's requirements.",
+    highlights: [
+      "Assessment and mapping of personal data",
+      "Legal and contractual compliance",
+      "Governance and internal procedures",
+      "Record of processing activities, verified by the Romanian DPA",
+    ],
+  },
+  {
+    slug: "dpo",
+    title: "Data Protection Officer",
+    description:
+      "We appoint a dedicated Data Protection Officer with full guarantees of independence — from overseeing the compliance strategy, to notifying the supervisory authority within 72 hours of becoming aware of a data security breach.",
+    highlights: [
+      "Internal or external DPO, your choice",
+      "Point of contact with the Romanian DPA",
+      "Handling data subjects' complaints",
+      "Periodic audit of data flows",
+    ],
+  },
+  {
+    slug: "legal-juridic",
+    title: "Legal Consulting",
+    description:
+      "A legal department led by an attorney with over 25 years of experience at the highest level, with a career built around negotiating the interests of the Romanian state and of local and international companies.",
+    highlights: [
+      "Corporate, mergers, acquisitions & privatizations",
+      "Insolvency and restructuring",
+      "Litigation and arbitration",
+      "Technology, IT & Data Protection",
+    ],
+  },
+  {
+    slug: "cursuri",
+    title: "Continuing Professional Training",
+    description:
+      "Continuing professional training programs (Lifelong Learning profile), with modules structured by competency — cybersecurity, AI governance, risk management and data protection — and a certificate of participation.",
+    highlights: [
+      "Cybersecurity & Incident Management",
+      "Artificial Intelligence Governance",
+      "Risk Management & Due Diligence",
+      "Personal Data Protection (GDPR)",
+    ],
+  },
+]
+
 export const digitalGovernanceIntro =
   "Digital governance and risk management form a distinct pillar of our practice, with its own team and methodology: the Artificial Intelligence Regulation (AI Act), the NIS2 Directive on cybersecurity, and the ISO governance and risk management standards — the entire European digital resilience framework in force or under adoption. We integrate these requirements into a single operational model, adapted to each operator's real activity."
 
@@ -355,7 +444,7 @@ export const dpoDescription = {
 }
 
 export const legalLead = {
-  name: "Ruxandra Costea-Comanici",
+  name: "Ruxandra Costea",
   title: "Attorney · Head of Legal Department",
   credential: "Member of the Bucharest Bar since November 2004 · over 25 years of experience in law and insolvency",
   tagline: "Powered by experience, sustained by results.",
@@ -388,6 +477,8 @@ export const legalAreas = [
   "Public procurement and competition",
   "Labour law",
   "Intellectual property",
+  "IT & technology law",
+  "Data privacy & confidentiality",
   "Real estate and urban-planning law",
   "Civil, commercial litigation and arbitration",
   "Administrative and institutional law",
@@ -426,6 +517,10 @@ export const legalDepartments = [
   {
     title: "European Law & Competition Policy",
     body: "Advice on European legislation and policy, application of relevant EU directives and their alignment with the national legal framework, supported by a Master's in European Studies from the University of Maastricht.",
+  },
+  {
+    title: "Technology, IT & Data Protection",
+    body: "Legal advice for projects and transactions with a technology component — IT contracts, software licensing, digital intellectual property and GDPR compliance — in close collaboration with the group's GDPR Department and IT Security Department, for a single point of legal, technical and compliance accountability.",
   },
 ]
 
