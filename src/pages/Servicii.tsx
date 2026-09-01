@@ -11,6 +11,7 @@ import {
   Building2,
   BookOpen,
   Users,
+  Gauge,
 } from "lucide-react"
 import PageHero from "../components/PageHero"
 import { useLocale, useContent, useLocalizedLink } from "../LocaleContext"
@@ -19,6 +20,7 @@ import { ui } from "../ui"
 const serviceIcons: Record<string, typeof ShieldAlert> = {
   "it-security": ShieldAlert,
   "guvernanta-digitala": Cpu,
+  "managementul-riscurilor": Gauge,
   audit: ClipboardCheck,
   consultanta: ShieldCheck,
   dpo: Fingerprint,

@@ -1,13 +1,15 @@
 import PageHero from "../components/PageHero"
 import SectionHeading from "../components/SectionHeading"
-import { ExternalLink } from "lucide-react"
-import { useLocale, useContent } from "../LocaleContext"
+import { Link } from "react-router-dom"
+import { ArrowRight, ExternalLink } from "lucide-react"
+import { useLocale, useContent, useLocalizedLink } from "../LocaleContext"
 import { ui } from "../ui"
 
 export default function GuvernantaDigitala() {
   const locale = useLocale()
   const { digitalGovernanceIntro, aiActAreas, nis2Areas, governanceStandards, euResources } = useContent()
   const t = ui[locale].guvernantaDigitala
+  const toLocale = useLocalizedLink()
 
   return (
     <div>
@@ -53,6 +55,20 @@ export default function GuvernantaDigitala() {
       </section>
 
       <section className="mx-auto max-w-3xl px-5 py-16">
+        <div className="border-l-4 border-gold-500 bg-paper-100 px-6 py-5">
+          <span className="eyebrow">{t.riskEyebrow}</span>
+          <h3 className="mt-2 text-sm font-bold text-navy-950">{t.riskTitle}</h3>
+          <p className="mt-2 text-sm leading-relaxed text-slate-700">{t.riskBody}</p>
+          <Link
+            to={toLocale("/managementul-riscurilor")}
+            className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-gold-600 hover:text-gold-700 transition-colors"
+          >
+            {t.riskLinkLabel} <ArrowRight size={13} />
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-3xl px-5 pb-16">
         <SectionHeading eyebrow={t.resourcesEyebrow} title={t.resourcesTitle} />
         <p className="mt-4 text-sm text-slate-500 text-center max-w-xl mx-auto leading-relaxed">{t.resourcesBody}</p>
         <div className="mt-8 space-y-3">
