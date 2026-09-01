@@ -79,7 +79,7 @@ export const expertiseAreas = [
 ]
 
 export const digitalGovernanceIntro =
-  "Beyond personal data protection, our team covers the entire European digital resilience framework in force or under adoption: the Artificial Intelligence Regulation (AI Act), the NIS2 Directive on cybersecurity, and the ISO governance and risk management standards. We integrate these requirements into a single operational model, adapted to each operator's real activity."
+  "Digital governance and risk management form a distinct pillar of our practice, with its own team and methodology: the Artificial Intelligence Regulation (AI Act), the NIS2 Directive on cybersecurity, and the ISO governance and risk management standards — the entire European digital resilience framework in force or under adoption. We integrate these requirements into a single operational model, adapted to each operator's real activity."
 
 export const aiActAreas = [
   "Classifying artificial intelligence systems by risk level and identifying the applicable obligations",

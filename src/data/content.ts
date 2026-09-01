@@ -85,7 +85,7 @@ export const expertiseAreas = [
 // Conformitate avansată 2026 — AI Act, NIS2, standarde ISO de guvernanță și risc.
 // Conținut generic, derivat din practica proprie de consultanță; fără referiri la clienți.
 export const digitalGovernanceIntro =
-  "Pe lângă protecția datelor cu caracter personal, echipa noastră acoperă întregul cadru european de reziliență digitală aflat în vigoare sau în curs de adoptare: Regulamentul privind Inteligența Artificială (AI Act), Directiva NIS2 privind securitatea cibernetică și standardele ISO de guvernanță și management al riscului. Integrăm aceste cerințe într-un singur model operațional, adaptat activității reale a fiecărui operator."
+  "Guvernanța digitală și managementul riscului formează un pilon distinct al practicii noastre, cu propria echipă și metodologie: Regulamentul privind Inteligența Artificială (AI Act), Directiva NIS2 privind securitatea cibernetică și standardele ISO de guvernanță și management al riscului — întregul cadru european de reziliență digitală aflat în vigoare sau în curs de adoptare. Integrăm aceste cerințe într-un singur model operațional, adaptat activității reale a fiecărui operator."
 
 export const aiActAreas = [
   "Clasificarea sistemelor de inteligență artificială pe niveluri de risc și identificarea obligațiilor aplicabile",
