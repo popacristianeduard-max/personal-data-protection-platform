@@ -83,6 +83,14 @@ export default function Home() {
             )
           })}
         </div>
+        <div className="mt-10 text-center">
+          <Link
+            to={toLocale("/servicii")}
+            className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wide text-gold-600 hover:text-gold-700 transition-colors"
+          >
+            {t.viewAllServices} <ArrowRight size={15} />
+          </Link>
+        </div>
       </section>
 
       {/* Recommendations */}
