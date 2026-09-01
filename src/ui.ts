@@ -48,6 +48,9 @@ export interface UiDict {
     trainingCardTitle: string
     trainingCardBody: string
     viewProgramsLabel: string
+    methodologyEyebrow: string
+    methodologyTitle: string
+    stagePrefix: string
   }
   audit: {
     heroEyebrow: string
@@ -66,11 +69,6 @@ export interface UiDict {
     differentiatorsEyebrow: string
     differentiatorsTitle: string
     foreignEyebrow: string
-    complianceEyebrow: string
-    complianceTitle: string
-    methodologyEyebrow: string
-    methodologyTitle: string
-    stagePrefix: string
     ctaText: string
     ctaButton: string
   }
@@ -230,8 +228,8 @@ export const ui: { ro: UiDict; en: UiDict } = {
     },
     home: {
       heroEyebrow: "Securitate Cibernetică & Managementul Riscului",
-      heroTitleLine1: "Protejăm compania",
-      heroTitleLine2: "de riscurile digitale de azi.",
+      heroTitleLine1: "Construim reziliență.",
+      heroTitleLine2: "Nu doar conformitate.",
       heroLede:
         "Consultanță de specialitate în securitate cibernetică, guvernanță AI și managementul riscului — cu protecția datelor cu caracter personal (GDPR), due diligence și consultanță juridică integrate în același model de conformitate. O experiență dovedită din 2015.",
       heroImgAlt: "Sesiune de curs GDPR, cu participanți și prezentare a Regulamentului (UE) 2016/679",
@@ -264,6 +262,9 @@ export const ui: { ro: UiDict; en: UiDict } = {
       trainingCardBody:
         "Programe de formare personalizate pentru HR, IT, sănătate, construcții, retail sau sectorul public, gândite să asigure conformitatea și protecția reală a companiei.",
       viewProgramsLabel: "Vezi programele",
+      methodologyEyebrow: "Metodologie",
+      methodologyTitle: "Etapele privind implementarea Regulamentului (UE) 2016/679",
+      stagePrefix: "Etapa",
     },
     audit: {
       heroEyebrow: "Audit & Due Diligence",
@@ -283,11 +284,6 @@ export const ui: { ro: UiDict; en: UiDict } = {
       differentiatorsEyebrow: "Diferențiatori",
       differentiatorsTitle: "De ce să alegeți echipa noastră",
       foreignEyebrow: "Pentru investitori străini",
-      complianceEyebrow: "Serviciu conex",
-      complianceTitle: "Audit de conformitate GDPR — etapele Regulamentului (UE) 2016/679",
-      methodologyEyebrow: "Metodologie",
-      methodologyTitle: "Etapele privind implementarea Regulamentului (UE) 2016/679",
-      stagePrefix: "Etapa",
       ctaText: "Aveți în plan o achiziție în România sau un proces de due diligence? Discutăm confidențial perimetrul lucrării.",
       ctaButton: "Cerere ofertă",
     },
@@ -481,8 +477,8 @@ export const ui: { ro: UiDict; en: UiDict } = {
     },
     home: {
       heroEyebrow: "Cybersecurity & Risk Management",
-      heroTitleLine1: "Protecting your company",
-      heroTitleLine2: "from today's digital risks.",
+      heroTitleLine1: "We build resilience.",
+      heroTitleLine2: "Not just compliance.",
       heroLede:
         "Specialist consulting in cybersecurity, AI governance and risk management — with personal data protection (GDPR), due diligence and legal consulting integrated into the same compliance model. A proven track record since 2015.",
       heroImgAlt: "GDPR training session, with participants and a presentation of Regulation (EU) 2016/679",
@@ -515,6 +511,9 @@ export const ui: { ro: UiDict; en: UiDict } = {
       trainingCardBody:
         "Tailored training programs for HR, IT, healthcare, construction, retail or the public sector, designed to ensure compliance and the real protection of your company.",
       viewProgramsLabel: "View programs",
+      methodologyEyebrow: "Methodology",
+      methodologyTitle: "Stages in implementing Regulation (EU) 2016/679",
+      stagePrefix: "Stage",
     },
     audit: {
       heroEyebrow: "Audit & Due Diligence",
@@ -534,11 +533,6 @@ export const ui: { ro: UiDict; en: UiDict } = {
       differentiatorsEyebrow: "Differentiators",
       differentiatorsTitle: "Why choose our team",
       foreignEyebrow: "For foreign investors",
-      complianceEyebrow: "Related service",
-      complianceTitle: "GDPR compliance audit — the stages of Regulation (EU) 2016/679",
-      methodologyEyebrow: "Methodology",
-      methodologyTitle: "Stages in implementing Regulation (EU) 2016/679",
-      stagePrefix: "Stage",
       ctaText: "Planning an acquisition in Romania, or a due diligence process? Let's discuss the scope, in confidence.",
       ctaButton: "Request a quote",
     },
