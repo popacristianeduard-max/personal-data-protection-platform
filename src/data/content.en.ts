@@ -106,6 +106,18 @@ export const servicesOverview = [
     ],
   },
   {
+    slug: "managementul-riscurilor",
+    title: "Risk Management",
+    description:
+      "A single framework, built on the ISO 31000 standard, integrating legal, IT, operational and reputational risks into one register — with a methodology for identification, assessment, treatment and continuous monitoring.",
+    highlights: [
+      "A single risk register, across every dimension of the organisation",
+      "ISO 31000 methodology: identification, assessment, treatment, monitoring",
+      "Treatment matrix by impact and likelihood",
+      "Integration with DPIA (GDPR), FRIA (AI Act), NIS2 and ISO 22301",
+    ],
+  },
+  {
     slug: "audit",
     title: "Audit & Due Diligence",
     description:
@@ -164,6 +176,108 @@ export const servicesOverview = [
       "Risk Management & Due Diligence",
       "Personal Data Protection (GDPR)",
     ],
+  },
+]
+
+export const riskManagementIntro =
+  "Risk management is not an isolated chapter — it is the thread that connects every one of our services: data protection, AI governance, cybersecurity, business continuity and legal compliance. We apply a single framework, built on the ISO 31000 standard, giving management a unified view of the organisation's exposure — regardless of the nature of the risk."
+
+export const riskTypes = [
+  {
+    title: "Legal risks",
+    body: "Arise from non-compliance with regulations such as GDPR, the AI Act or the Data Act, and can lead to sanctions, litigation and contractual liability.",
+  },
+  {
+    title: "IT & cybersecurity risks",
+    body: "Linked to information security and digital infrastructure, directly regulated by the NIS2 Directive — cyberattacks, technical vulnerabilities, data loss.",
+  },
+  {
+    title: "Operational risks",
+    body: "Related to internal processes, human error and organisational dysfunction, generating delays, extra costs and efficiency losses.",
+  },
+  {
+    title: "Reputational risks",
+    body: "Arise from incidents or non-compliance and affect the trust of partners and clients and the organisation's market position.",
+  },
+]
+
+export const riskMethodologySteps = [
+  {
+    title: "Identification",
+    body: "Systematic detection of potential risks across every area of activity — legal, technical, operational.",
+  },
+  {
+    title: "Assessment",
+    body: "Analysis of the likelihood and impact of each risk, to understand the real level of exposure.",
+  },
+  {
+    title: "Prioritisation",
+    body: "Ranking identified risks by importance, so resources are focused where impact is greatest.",
+  },
+  {
+    title: "Treatment",
+    body: "Implementing control measures — prevention, reduction, transfer or, where appropriate, accepting residual risk.",
+  },
+  {
+    title: "Monitoring",
+    body: "Continuous tracking and reassessment of risks, adapting to changes in the organisation's internal and external environment.",
+  },
+]
+
+export const riskFrameworkPillars = [
+  {
+    title: "Principles",
+    body: "An integrated framework, tailored to the organisation's structure, dynamic and based on the best available information, with continuous improvement.",
+  },
+  {
+    title: "Framework",
+    body: "Leadership commitment, integration into existing processes, design, implementation, evaluation and improvement of the risk management system.",
+  },
+  {
+    title: "Process",
+    body: "Communication and consultation, scope/context/criteria, risk assessment, treatment, monitoring, recording and reporting.",
+  },
+]
+
+export const riskIntegrationAreas = [
+  {
+    title: "Data protection",
+    body: "Risks identified through Data Protection Impact Assessments (DPIA), under Article 35 GDPR.",
+  },
+  {
+    title: "Artificial intelligence",
+    body: "AI system risks, assessed through Fundamental Rights Impact Assessments (FRIA) and risk-level classification under the AI Act.",
+  },
+  {
+    title: "Cybersecurity",
+    body: "IT risks identified and treated under the NIS2 Directive and the ISO/IEC 27005 methodology.",
+  },
+  {
+    title: "Business continuity",
+    body: "Business-interruption risks, analysed through a Business Impact Analysis (BIA), under ISO 22301.",
+  },
+  {
+    title: "Day-to-day operations",
+    body: "Operational risks specific to each organisation's daily activity, integrated into the same unified risk register.",
+  },
+]
+
+export const riskBenefits = [
+  {
+    title: "Transparency",
+    body: "A single register removes duplication and gives management a complete picture of the organisation's exposure.",
+  },
+  {
+    title: "Efficient prioritisation",
+    body: "Comparing risks by likelihood and impact allows resources to be directed to the most critical areas.",
+  },
+  {
+    title: "Easy reporting",
+    body: "A unified format makes reporting to management, auditors and supervisory authorities straightforward.",
+  },
+  {
+    title: "Organisational resilience",
+    body: "Continuous monitoring ensures rapid adaptation to changes in the internal and external environment.",
   },
 ]
 

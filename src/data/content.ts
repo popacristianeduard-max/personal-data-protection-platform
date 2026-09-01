@@ -110,6 +110,18 @@ export const servicesOverview = [
     ],
   },
   {
+    slug: "managementul-riscurilor",
+    title: "Managementul Riscurilor",
+    description:
+      "Un cadru unic, bazat pe standardul ISO 31000, care integrează riscurile juridice, IT, operaționale și reputaționale într-un singur registru — cu metodologie de identificare, evaluare, tratare și monitorizare continuă.",
+    highlights: [
+      "Registru unic de risc, pe toate dimensiunile organizației",
+      "Metodologie ISO 31000: identificare, evaluare, tratare, monitorizare",
+      "Matrice de tratament pe impact și probabilitate",
+      "Integrare cu DPIA (GDPR), FRIA (AI Act), NIS2 și ISO 22301",
+    ],
+  },
+  {
     slug: "audit",
     title: "Audit & Due Diligence",
     description:
@@ -168,6 +180,109 @@ export const servicesOverview = [
       "Managementul Riscului & Due Diligence",
       "Protecția Datelor cu Caracter Personal (GDPR)",
     ],
+  },
+]
+
+// Managementul Riscurilor — cadru ISO 31000, generic, derivat din practica proprie de consultanță; fără referiri la clienți.
+export const riskManagementIntro =
+  "Managementul riscului nu este un capitol izolat, ci firul care leagă toate serviciile noastre: protecția datelor, guvernanța AI, securitatea cibernetică, continuitatea afacerii și conformitatea juridică. Aplicăm un cadru unic, structurat pe standardul ISO 31000, care oferă conducerii o imagine unitară asupra expunerii organizației — indiferent de natura riscului."
+
+export const riskTypes = [
+  {
+    title: "Riscuri juridice",
+    body: "Derivă din neconformitatea cu reglementări precum GDPR, AI Act sau Data Act și pot genera sancțiuni, litigii și răspundere contractuală.",
+  },
+  {
+    title: "Riscuri IT & cibernetice",
+    body: "Asociate securității informațiilor și infrastructurii digitale, reglementate direct de Directiva NIS2 — atacuri cibernetice, vulnerabilități tehnice, pierderi de date.",
+  },
+  {
+    title: "Riscuri operaționale",
+    body: "Legate de procesele interne, erorile umane și disfuncționalitățile organizaționale, generatoare de întârzieri, costuri suplimentare și pierderi de eficiență.",
+  },
+  {
+    title: "Riscuri reputaționale",
+    body: "Apar în urma incidentelor sau neconformităților și afectează încrederea partenerilor, clienților și poziția pe piață a organizației.",
+  },
+]
+
+export const riskMethodologySteps = [
+  {
+    title: "Identificare",
+    body: "Detectarea sistematică a riscurilor potențiale în toate domeniile de activitate — juridic, tehnic, operațional.",
+  },
+  {
+    title: "Evaluare",
+    body: "Analiza probabilității de apariție și a impactului fiecărui risc, pentru înțelegerea nivelului real de expunere.",
+  },
+  {
+    title: "Prioritizare",
+    body: "Clasificarea riscurilor identificate în funcție de importanță, pentru a concentra resursele acolo unde impactul este cel mai mare.",
+  },
+  {
+    title: "Tratare",
+    body: "Implementarea măsurilor de control — prevenire, reducere, transfer sau, după caz, acceptarea riscului rezidual.",
+  },
+  {
+    title: "Monitorizare",
+    body: "Urmărirea și reevaluarea continuă a riscurilor, cu adaptare la schimbările din mediul intern și extern al organizației.",
+  },
+]
+
+export const riskFrameworkPillars = [
+  {
+    title: "Principii",
+    body: "Un cadru integrat, personalizat pe structura organizației, dinamic și bazat pe cea mai bună informație disponibilă, cu îmbunătățire continuă.",
+  },
+  {
+    title: "Cadru",
+    body: "Angajamentul conducerii, integrarea în procesele existente, proiectarea, implementarea, evaluarea și îmbunătățirea sistemului de management al riscului.",
+  },
+  {
+    title: "Proces",
+    body: "Comunicare și consultare, stabilirea contextului și a criteriilor, evaluarea riscului, tratament, monitorizare, înregistrare și raportare.",
+  },
+]
+
+export const riskIntegrationAreas = [
+  {
+    title: "Protecția datelor",
+    body: "Riscurile identificate prin evaluările de impact asupra protecției datelor (DPIA), conform art. 35 GDPR.",
+  },
+  {
+    title: "Inteligență artificială",
+    body: "Riscurile sistemelor de IA, evaluate prin evaluări de impact fundamental (FRIA) și clasificare pe niveluri de risc, conform AI Act.",
+  },
+  {
+    title: "Securitate cibernetică",
+    body: "Riscurile IT identificate și tratate potrivit Directivei NIS2 și metodologiei ISO/IEC 27005.",
+  },
+  {
+    title: "Continuitatea afacerii",
+    body: "Riscurile de întrerupere a activității, analizate printr-o analiză de impact asupra afacerii (BIA), conform ISO 22301.",
+  },
+  {
+    title: "Operațiuni curente",
+    body: "Riscurile operaționale specifice activității de zi cu zi a fiecărui operator, integrate în același registru unic de risc.",
+  },
+]
+
+export const riskBenefits = [
+  {
+    title: "Transparență",
+    body: "Un registru unic elimină duplicările și oferă conducerii o imagine completă asupra expunerii organizației.",
+  },
+  {
+    title: "Prioritizare eficientă",
+    body: "Compararea riscurilor după probabilitate și impact permite alocarea resurselor către zonele critice.",
+  },
+  {
+    title: "Raportare facilă",
+    body: "Un format unitar facilitează raportarea către conducere, auditori și autoritățile de supraveghere.",
+  },
+  {
+    title: "Reziliență organizațională",
+    body: "Monitorizarea continuă asigură adaptarea rapidă la schimbările din mediul intern și extern.",
   },
 ]
 
