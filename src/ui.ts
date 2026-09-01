@@ -256,7 +256,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
         "Toate serviciile de consultanță oferite de experții noștri au ca scop optimizarea fluxurilor de date prelucrate și asigurarea conformității organizației cu prevederile Regulamentului (UE) 2016/679.",
       govCardTitle: "Guvernanță Digitală & Risc",
       govCardBody:
-        "Extindem consultanța dincolo de datele cu caracter personal: AI Act, Directiva NIS2 și standardele ISO de guvernanță și management al riscului.",
+        "Un serviciu distinct, cu propria echipă și metodologie: AI Act, Directiva NIS2 și standardele ISO de guvernanță și management al riscului.",
       detailsLabel: "Detalii",
       trainingCardTitle: "Training avansat, pe domenii de activitate",
       trainingCardBody:
@@ -505,7 +505,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
         "All the consulting services provided by our experts aim to optimize the data flows processed and ensure the organization's compliance with the requirements of Regulation (EU) 2016/679.",
       govCardTitle: "Digital Governance & Risk",
       govCardBody:
-        "We extend our consulting beyond personal data: the AI Act, the NIS2 Directive and the ISO governance and risk management standards.",
+        "A distinct service, with its own team and methodology: the AI Act, the NIS2 Directive and the ISO governance and risk management standards.",
       detailsLabel: "Details",
       trainingCardTitle: "Advanced training, by field of activity",
       trainingCardBody:
