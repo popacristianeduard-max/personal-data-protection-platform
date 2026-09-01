@@ -56,7 +56,7 @@ export const expertiseAreas = [
     slug: "audit",
     title: "Audit & Due Diligence",
     summary:
-      "Security and compliance audits, plus legal, financial, IT and data-protection due diligence for transactions, mergers and partnerships.",
+      "Transaction due diligence — legal, financial, tax, IT and data protection — for acquisitions, mergers and market entry into Romania, alongside compliance audits.",
   },
   {
     slug: "consultanta",
@@ -173,28 +173,124 @@ export const auditStages = [
 ]
 
 export const dueDiligenceIntro =
-  "Beyond the compliance audit, the group supports transactions, mergers and partnerships through a multidisciplinary due diligence process — legal, financial, IT and data protection — that exposes real risks before they become yours."
+  "Transaction due diligence is not a checklist — it is an exercise in applied expertise that can change the decision to buy, the price offered, or the structure of the deal. We run due diligence processes for acquisitions, mergers, joint ventures and market entries into Romania, with a multidisciplinary team covering the legal, financial, tax, HR, IT, cybersecurity and data protection workstreams at once — under a single point of coordination, not separate departments handing findings off to one another."
+
+export const dueDiligenceForeignNote =
+  "For foreign investors evaluating an acquisition in Romania, we work with reports written entirely in English, direct communication with the investor's own international legal and financial advisors, and an in-depth understanding of the local regulatory framework — including the foreign direct investment (FDI) screening mechanisms applicable where the deal targets a sector considered strategic."
+
+export const dueDiligenceAudience = [
+  "Strategic investors and private equity funds evaluating the acquisition of a Romanian company",
+  "International groups entering the local market through an acquisition, merger or joint venture",
+  "Sellers preparing for a transaction who need an internal review before entering negotiations (vendor due diligence)",
+  "Financial institutions and funds financing a deal who need an independent assessment of the target's risks",
+  "Companies evaluating a strategic partner, distributor or significant supplier before signing a long-term partnership",
+]
 
 export const dueDiligenceAreas = [
   {
-    title: "Legal due diligence",
-    body: "Reviewing the corporate structure, significant contracts, pending litigation and compliance with the legislation applicable to the field of activity.",
+    title: "Legal & corporate due diligence",
+    body: "We review the corporate structure and ownership chain, board and shareholder resolutions, material contracts, pending or imminent litigation, operating licenses, and any encumbrances or guarantees over assets — the full picture of legal risks that could affect the validity of the deal.",
   },
   {
     title: "Financial due diligence",
-    body: "Analysis of financial statements, tax risks and contractual commitments with an economic impact on the transaction.",
+    body: "We analyse historical financial statements, quality of earnings, normalised working capital, net debt and off-balance-sheet commitments, to establish whether reported performance reflects the business's real economics. The findings feed directly into price negotiation.",
+  },
+  {
+    title: "Tax due diligence",
+    body: "We assess exposure to tax risk — corporate income tax, VAT, transfer pricing, social contributions — and the history of tax audits, to identify hidden liabilities or tax positions the authorities could challenge after closing.",
+  },
+  {
+    title: "HR & employment due diligence",
+    body: "We review individual and collective employment contracts, compensation structure, labour disputes, key-person dependency and outsourcing risk — factors with a direct impact on the post-acquisition integration plan.",
   },
   {
     title: "IT & cybersecurity due diligence",
-    body: "Assessment of the technical infrastructure, known vulnerabilities and the security incident history of the transaction target.",
+    body: "We assess the IT systems architecture, dependency on vendors and software licensing, security incident history and the maturity of the target's protective measures — the technical debt and cyber risk inherited along with the acquisition.",
   },
   {
-    title: "Data protection due diligence",
-    body: "Reviewing the target's GDPR compliance — processing records, legal grounds and any reported data security incidents.",
+    title: "Data protection (GDPR) due diligence",
+    body: "We review the target's processing records, legal grounds, international data transfers and any reported data security incidents. GDPR non-compliance can generate fines and significant liabilities, often invisible to a standard financial audit.",
   },
   {
-    title: "Third-party risk management",
-    body: "Assessing the operational, contractual and security risks associated with partners and the supplier chain.",
+    title: "Commercial & operational due diligence",
+    body: "We analyse customer and supplier concentration, material commercial contracts, competitive positioning and the sustainability of the business model, to validate the business plan presented by the seller.",
+  },
+  {
+    title: "Regulatory, licensing & environmental due diligence",
+    body: "We review the sector-specific permits required for the business, environmental compliance, and, where relevant, the applicability of foreign direct investment screening mechanisms in sectors considered strategic.",
+  },
+  {
+    title: "Integrity & anti-corruption due diligence",
+    body: "We carry out checks on ultimate beneficial owners (UBOs), the reputation of shareholders and management, exposure to international sanctions, and money-laundering or corruption risk — increasingly required by transaction financiers.",
+  },
+]
+
+export const dueDiligenceProcess = [
+  {
+    period: "Stage 0",
+    role: "Scoping the engagement",
+    body: "We agree the transaction's scope, priority risk areas and critical deadlines together, sign the confidentiality agreement, and set up secure access to the data room.",
+  },
+  {
+    period: "Stage 1",
+    role: "Preliminary review (Red Flag Report)",
+    body: "Within a few working days, a small team identifies the major risks that could block the deal or materially change the price — useful before committing resources to a full due diligence.",
+  },
+  {
+    period: "Stage 2",
+    role: "Full-scope due diligence",
+    body: "The multidisciplinary team reviews the full data room documentation, raises follow-up information requests (Q&A), conducts management interviews and, where relevant, site visits.",
+  },
+  {
+    period: "Stage 3",
+    role: "Reporting & risk matrix",
+    body: "Findings are consolidated into a report structured by risk area, together with a risk matrix (likelihood/impact) and an executive summary for the investment committee or board.",
+  },
+  {
+    period: "Stage 4",
+    role: "Negotiation support",
+    body: "We translate the findings into concrete contract clauses — representations and warranties, price adjustment mechanisms, conditions precedent and disclosure schedules — working closely with the deal's legal counsel.",
+  },
+  {
+    period: "Stage 5",
+    role: "Post-closing support",
+    body: "After signing, we assist with implementing the remediation plan for identified risks and integrating the acquired company's GDPR, IT and HR compliance into the buyer's structure.",
+  },
+]
+
+export const dueDiligenceDeliverables = [
+  "A preliminary Red Flag Report, geared toward the decision to proceed with or abandon the deal",
+  "A full due diligence report, structured by risk area",
+  "A risk matrix (likelihood × impact) with remediation recommendations",
+  "An executive summary for the investment committee or board of directors",
+  "A disclosure schedule and proposed clauses for the sale and purchase agreement (SPA)",
+  "A questions-and-answers (Q&A) tracker with the selling party",
+]
+
+export const dueDiligenceDifferentiators = [
+  {
+    title: "Direct access to the experts",
+    body: "You work directly with the specialists who sign the report, from the first meeting to closing — without successive layers of junior consultants between you and the real team.",
+  },
+  {
+    title: "One team, every risk area",
+    body: "Legal, tax, HR, IT, cybersecurity and data protection are covered by the same team, coordinated as one — not separate departments handing findings off to one another.",
+  },
+  {
+    title: "Timelines matched to the deal",
+    body: "Preliminary red flag reports can be delivered within a few working days, to support fast decisions on whether to proceed with or abandon a transaction.",
+  },
+  {
+    title: "Fees agreed before work starts",
+    body: "The fee structure is agreed on the basis of the agreed scope before work begins, rather than hard-to-predict hourly billing over the course of the transaction.",
+  },
+  {
+    title: "Bilingual reporting, for foreign investors",
+    body: "Reports can be written entirely in English and coordinated directly with the investor's own international legal and financial advisors.",
+  },
+  {
+    title: "Confidentiality as standard practice, not just advice",
+    body: "As a cybersecurity and data protection team ourselves, we apply the same information security standards to the transaction's documents that we recommend to our clients.",
   },
 ]
 

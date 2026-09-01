@@ -6,13 +6,6 @@ export const brand = {
   since: 2015,
 }
 
-export const stats = [
-  { value: "24", label: "companii auditate" },
-  { value: "12", label: "consultanți GDPR" },
-  { value: "5", label: "speakeri acreditați" },
-  { value: "2000+", label: "cursanți pregătiți" },
-]
-
 // Poziționare centrală (2026): securitate cibernetică, guvernanță AI și managementul riscului —
 // direcția principală a grupului — cu protecția datelor cu caracter personal (GDPR) integrată
 // ca element de conformitate, nu ca obiectiv unic. Construită pe aceeași experiență reală de peste
@@ -67,7 +60,7 @@ export const expertiseAreas = [
     slug: "audit",
     title: "Audit & Due Diligence",
     summary:
-      "Audit de securitate și conformitate, plus due diligence juridic, financiar, IT și de protecție a datelor pentru tranzacții, fuziuni și parteneriate.",
+      "Due diligence de tranzacție — juridic, financiar, fiscal, IT și protecția datelor — pentru achiziții, fuziuni și intrarea pe piața din România, alături de audit de conformitate.",
   },
   {
     slug: "consultanta",
@@ -189,28 +182,124 @@ export const auditStages = [
 ]
 
 export const dueDiligenceIntro =
-  "Dincolo de auditul de conformitate, grupul asistă tranzacții, fuziuni și parteneriate printr-un proces de due diligence multidisciplinar — juridic, financiar, IT și de protecție a datelor — care expune riscurile reale înainte ca acestea să devină ale dumneavoastră."
+  "Due diligence-ul de tranzacție nu este o listă de verificare, ci un exercițiu de expertiză aplicată care poate schimba decizia de a cumpăra, prețul oferit sau structura tranzacției. Coordonăm procese de due diligence pentru achiziții, fuziuni, joint-venture-uri și intrări pe piața din România, cu o echipă multidisciplinară care acoperă simultan componenta juridică, financiară, fiscală, de resurse umane, IT, securitate cibernetică și protecția datelor — sub un singur punct de coordonare, nu departamente separate care își predau constatările între ele."
+
+export const dueDiligenceForeignNote =
+  "Pentru investitorii străini care evaluează o achiziție în România, lucrăm cu rapoarte redactate integral în limba engleză, comunicare directă cu consilierii juridici și financiari internaționali ai investitorului și o cunoaștere aprofundată a cadrului de reglementare local — inclusiv a mecanismelor de autorizare aplicabile investițiilor străine directe (FDI screening), acolo unde tranzacția vizează un sector considerat strategic."
+
+export const dueDiligenceAudience = [
+  "Investitori strategici și fonduri de private equity care evaluează achiziția unei companii din România",
+  "Grupuri internaționale care intră pe piața locală prin achiziție, fuziune sau joint-venture",
+  "Vânzători aflați în pregătirea unei tranzacții, care au nevoie de un due diligence intern înainte de a intra în negociere (vendor due diligence)",
+  "Instituții financiare și fonduri care finanțează o tranzacție și au nevoie de o evaluare independentă a riscurilor țintei",
+  "Companii care evaluează un partener strategic, distribuitor sau furnizor semnificativ înainte de a semna un parteneriat pe termen lung",
+]
 
 export const dueDiligenceAreas = [
   {
-    title: "Due diligence juridic",
-    body: "Verificarea structurii corporative, a contractelor semnificative, litigiilor în curs și a conformității cu legislația aplicabilă domeniului de activitate.",
+    title: "Due diligence juridic & corporativ",
+    body: "Verificăm structura corporativă și lanțul de deținere, hotărârile organelor de conducere, contractele semnificative, litigiile în curs sau iminente, autorizațiile de funcționare și eventualele sarcini sau garanții asupra activelor — imaginea completă a riscurilor legale care pot afecta validitatea tranzacției.",
   },
   {
     title: "Due diligence financiar",
-    body: "Analiza situațiilor financiare, a riscurilor fiscale și a angajamentelor contractuale cu impact economic asupra tranzacției.",
+    body: "Analizăm situațiile financiare istorice, calitatea profitului raportat, fondul de rulment normalizat, datoria netă și angajamentele extrabilanțiere, pentru a stabili dacă performanța raportată reflectă realitatea economică a afacerii. Concluziile alimentează direct negocierea prețului.",
+  },
+  {
+    title: "Due diligence fiscal",
+    body: "Evaluăm expunerea la riscuri fiscale — impozit pe profit, TVA, prețuri de transfer, contribuții sociale — și istoricul inspecțiilor fiscale, pentru a identifica pasive ascunse sau poziții fiscale susceptibile de a fi contestate de autorități după închiderea tranzacției.",
+  },
+  {
+    title: "Due diligence de resurse umane & relații de muncă",
+    body: "Analizăm contractele individuale și colective de muncă, structura de remunerare, litigiile de muncă, dependența de persoane-cheie și riscurile legate de externalizare — elemente cu impact direct asupra planului de integrare post-achiziție.",
   },
   {
     title: "Due diligence IT & securitate cibernetică",
-    body: "Evaluarea infrastructurii tehnice, a vulnerabilităților cunoscute și a istoricului de incidente de securitate ale țintei tranzacției.",
+    body: "Evaluăm arhitectura sistemelor informatice, dependența de furnizori și licențe software, istoricul incidentelor de securitate și maturitatea măsurilor de protecție ale țintei — datoria tehnică și riscul cibernetic moștenite odată cu achiziția.",
   },
   {
-    title: "Due diligence privind protecția datelor",
-    body: "Verificarea conformității GDPR a țintei — evidențele de prelucrare, temeiurile legale și eventualele incidente de securitate a datelor raportate.",
+    title: "Due diligence privind protecția datelor (GDPR)",
+    body: "Verificăm evidențele de prelucrare, temeiurile legale, transferurile internaționale de date și eventualele incidente de securitate raportate ale companiei-țintă. Neconformitățile GDPR pot genera amenzi și pasive semnificative, adesea invizibile într-un audit financiar clasic.",
   },
   {
-    title: "Managementul riscului asociat furnizorilor și partenerilor (third-party risk)",
-    body: "Evaluarea riscurilor operaționale, contractuale și de securitate asociate colaboratorilor și lanțului de furnizori.",
+    title: "Due diligence comercial & operațional",
+    body: "Analizăm concentrarea și dependența de clienți și furnizori-cheie, contractele comerciale semnificative, poziția competitivă și sustenabilitatea modelului de afaceri, pentru a valida planul de afaceri prezentat de vânzător.",
+  },
+  {
+    title: "Due diligence reglementat, licențe & mediu",
+    body: "Verificăm autorizațiile sectoriale specifice domeniului de activitate, conformitatea cu reglementările de mediu și, acolo unde este relevant, aplicabilitatea mecanismelor de autorizare a investițiilor străine directe în sectoarele considerate strategice.",
+  },
+  {
+    title: "Due diligence privind integritatea & conformitatea anticorupție",
+    body: "Realizăm verificări privind beneficiarii reali (UBO), reputația acționarilor și a conducerii, expunerea la sancțiuni internaționale și la riscuri de spălare a banilor sau corupție — cerințe tot mai frecvente din partea finanțatorilor tranzacției.",
+  },
+]
+
+export const dueDiligenceProcess = [
+  {
+    period: "Etapa 0",
+    role: "Definirea perimetrului",
+    body: "Stabilim împreună perimetrul tranzacției, ariile prioritare de risc și termenele critice, semnăm acordul de confidențialitate și configurăm accesul securizat la camera de date (data room).",
+  },
+  {
+    period: "Etapa 1",
+    role: "Analiza preliminară (Red Flag Report)",
+    body: "În câteva zile lucrătoare, o echipă restrânsă identifică riscurile majore care ar putea bloca tranzacția sau modifica semnificativ prețul — util înainte de a investi resurse într-un due diligence complet.",
+  },
+  {
+    period: "Etapa 2",
+    role: "Due diligence complet",
+    body: "Echipa multidisciplinară analizează integral documentația din camera de date, formulează cereri de informații suplimentare (Q&A), realizează interviuri cu managementul și, unde este cazul, vizite la sediu.",
+  },
+  {
+    period: "Etapa 3",
+    role: "Raportare & matrice de risc",
+    body: "Constatările sunt consolidate într-un raport structurat pe arii de risc, însoțit de o matrice de risc (probabilitate/impact) și de un sumar executiv pentru comitetul de investiții sau consiliul de administrație.",
+  },
+  {
+    period: "Etapa 4",
+    role: "Sprijin în negociere",
+    body: "Traducem constatările în clauze concrete de contract — declarații și garanții, mecanisme de ajustare a prețului, condiții suspensive și liste de excepții — în strânsă legătură cu consilierii juridici ai tranzacției.",
+  },
+  {
+    period: "Etapa 5",
+    role: "Sprijin post-închidere",
+    body: "După semnarea tranzacției, asistăm la implementarea planului de remediere a riscurilor identificate și la integrarea conformității GDPR, IT și de resurse umane ale companiei achiziționate în structura cumpărătorului.",
+  },
+]
+
+export const dueDiligenceDeliverables = [
+  "Raport preliminar de tip Red Flag, orientat spre decizia de a continua sau nu tranzacția",
+  "Raport complet de due diligence, structurat pe arii de risc",
+  "Matrice de risc (probabilitate × impact), cu recomandări de remediere",
+  "Sumar executiv pentru comitetul de investiții sau consiliul de administrație",
+  "Listă de excepții și propuneri de clauze pentru contractul de vânzare-cumpărare (SPA)",
+  "Registru de întrebări și răspunsuri (Q&A tracker) cu partea vânzătoare",
+]
+
+export const dueDiligenceDifferentiators = [
+  {
+    title: "Implicare directă, la nivel de expert",
+    body: "Lucrați direct cu specialiștii care semnează raportul, de la prima întâlnire până la închiderea tranzacției — fără straturi succesive de consultanți juniori între dumneavoastră și echipa reală.",
+  },
+  {
+    title: "O singură echipă, toate ariile de risc",
+    body: "Juridic, fiscal, resurse umane, IT, securitate cibernetică și protecția datelor sunt acoperite de aceeași echipă, coordonată unitar — nu de departamente separate care își predau constatările între ele.",
+  },
+  {
+    title: "Termene adaptate ritmului tranzacției",
+    body: "Rapoartele preliminare de tip red flag pot fi livrate în câteva zile lucrătoare, pentru a susține decizii rapide de continuare sau abandonare a tranzacției.",
+  },
+  {
+    title: "Onorarii stabilite înainte de start",
+    body: "Structura de onorarii este agreată pe baza perimetrului convenit înainte de începerea lucrărilor, fără facturare pe oră greu de anticipat pe parcursul tranzacției.",
+  },
+  {
+    title: "Raportare bilingvă, pentru investitori străini",
+    body: "Rapoartele pot fi redactate integral în limba engleză și coordonate direct cu consilierii juridici și financiari internaționali ai investitorului.",
+  },
+  {
+    title: "Confidențialitate ca practică de bază, nu doar ca recomandare",
+    body: "Fiind și o echipă de securitate cibernetică și protecția datelor, aplicăm asupra documentelor tranzacției aceleași standarde de securitate a informației pe care le recomandăm clienților noștri.",
   },
 ]
 
@@ -457,7 +546,7 @@ export const courseTracks = [
   },
   {
     title: "Protecția Datelor cu Caracter Personal (GDPR)",
-    body: "Programul complet de formare DPO și specialiști GDPR — module, curriculum și tarife disponibile mai jos.",
+    body: "Programul complet de formare DPO și specialiști GDPR — module și curriculum detaliate mai jos.",
   },
 ]
 
@@ -465,7 +554,6 @@ export const courseTiers = [
   {
     label: "SEMINAR",
     title: "Seminar GDPR — 3 ore",
-    price: "300 lei + TVA",
     items: [
       "Introducere: ce este un Regulament, de ce GDPR, proporționalitate vs. securitate",
       "Terminologie și principiile prelucrării",
@@ -477,7 +565,6 @@ export const courseTiers = [
   {
     label: "INTENSIV",
     title: "Curs intensiv — 1 zi × 8 ore",
-    price: "1.200 lei + TVA",
     items: [
       "Toate temele seminarului, aprofundate",
       "Fluxul de date într-o organizație",
@@ -489,7 +576,6 @@ export const courseTiers = [
   {
     label: "AVANSAT",
     title: "Curs avansat — 3 zile × 8 ore",
-    price: "3.000 lei + TVA",
     items: [
       "Program complet pe 3 zile, cu exemple practice detaliate",
       "Sesiune dedicată rolului și responsabilităților DPO",
