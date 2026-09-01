@@ -279,7 +279,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
       navHeader: "Navigare",
       deptHeader: "Departamente",
       aboutSuffix: (since) =>
-        `Din ${since}, securitate cibernetică, guvernanță AI, managementul riscului, conformitate GDPR și consultanță juridică pentru operatori de toate dimensiunile.`,
+        `Din ${since}, lider în securitate cibernetică, guvernanță AI, managementul riscului, conformitate GDPR și consultanță juridică pentru companii naționale și internaționale.`,
       copyright: "Toate drepturile rezervate.",
     },
     legalProfile: {
@@ -314,7 +314,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
       heroEyebrow: "Servicii",
       heroTitle: "Portofoliul complet de servicii",
       heroLede:
-        "De la securitate cibernetică și guvernanța inteligenței artificiale, la protecția datelor, audit de tranzacție și consultanță juridică — o singură echipă, o singură strategie de conformitate, gândită ca alternativă credibilă la marile firme de consultanță (Big Four).",
+        "De la securitate cibernetică și guvernanța inteligenței artificiale, la protecția datelor, audit de tranzacție și consultanță juridică — o singură echipă, o singură strategie de conformitate. Din 2015, asigurăm reziliența companiilor naționale și internaționale.",
       detailsLabel: "Detalii",
       sectorsEyebrow: "Sectoare deservite",
       sectorsTitle: "Formare și consultanță adaptate domeniului dumneavoastră",
@@ -353,7 +353,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
       heroEyebrow: "Audit & Due Diligence",
       heroTitle: "Due diligence de tranzacție pentru achiziții și intrarea pe piața din România",
       heroLede:
-        "Un proces de due diligence riguros, condus de o echipă multidisciplinară cu experiență națională și internațională — gândit ca o alternativă credibilă la marile firme de consultanță (Big Four), pentru investitori locali și străini deopotrivă.",
+        "Un proces de due diligence riguros, condus de o echipă multidisciplinară cu experiență națională și internațională, care asigură din 2015 reziliența companiilor și investitorilor — locali și străini deopotrivă.",
       ddEyebrow: "Tranzacții & Achiziții",
       ddTitle: "De ce contează un due diligence bine făcut",
       audienceEyebrow: "Cui ne adresăm",
@@ -592,7 +592,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
       navHeader: "Navigation",
       deptHeader: "Departments",
       aboutSuffix: (since) =>
-        `Since ${since}, cybersecurity, AI governance, risk management, GDPR compliance and legal consulting for operators of all sizes.`,
+        `Since ${since}, a leader in cybersecurity, AI governance, risk management, GDPR compliance and legal consulting for national and international companies.`,
       copyright: "All rights reserved.",
     },
     legalProfile: {
@@ -627,7 +627,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
       heroEyebrow: "Services",
       heroTitle: "Our Full Service Portfolio",
       heroLede:
-        "From cybersecurity and AI governance, to data protection, transaction due diligence and legal consulting — one team, one compliance strategy, built as a credible alternative to the large consulting firms (Big Four).",
+        "From cybersecurity and AI governance, to data protection, transaction due diligence and legal consulting — one team, one compliance strategy. Since 2015, we have secured the resilience of national and international companies.",
       detailsLabel: "Details",
       sectorsEyebrow: "Sectors we serve",
       sectorsTitle: "Training and consulting tailored to your field",
@@ -666,7 +666,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
       heroEyebrow: "Audit & Due Diligence",
       heroTitle: "Transaction due diligence for acquisitions and market entry into Romania",
       heroLede:
-        "A rigorous due diligence process, led by a multidisciplinary team with national and international experience — built as a credible alternative to the large consulting firms (Big Four), for local and foreign investors alike.",
+        "A rigorous due diligence process, led by a multidisciplinary team with national and international experience, securing the resilience of companies and investors — local and foreign alike — since 2015.",
       ddEyebrow: "Transactions & Acquisitions",
       ddTitle: "Why good due diligence matters",
       audienceEyebrow: "Who we work with",
