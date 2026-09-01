@@ -8,6 +8,7 @@ const quickPaths = [
   "/servicii",
   "/it-security",
   "/guvernanta-digitala",
+  "/managementul-riscurilor",
   "/audit",
   "/consultanta",
   "/dpo",

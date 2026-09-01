@@ -9,6 +9,7 @@ const navPaths = [
   "/servicii",
   "/it-security",
   "/guvernanta-digitala",
+  "/managementul-riscurilor",
   "/audit",
   "/consultanta",
   "/dpo",
