@@ -55,6 +55,19 @@ export interface UiDict {
     heroLede: string
     ddEyebrow: string
     ddTitle: string
+    audienceEyebrow: string
+    audienceTitle: string
+    areasEyebrow: string
+    areasTitle: string
+    processEyebrow: string
+    processTitle: string
+    deliverablesEyebrow: string
+    deliverablesTitle: string
+    differentiatorsEyebrow: string
+    differentiatorsTitle: string
+    foreignEyebrow: string
+    complianceEyebrow: string
+    complianceTitle: string
     methodologyEyebrow: string
     methodologyTitle: string
     stagePrefix: string
@@ -254,15 +267,28 @@ export const ui: { ro: UiDict; en: UiDict } = {
     },
     audit: {
       heroEyebrow: "Audit & Due Diligence",
-      heroTitle: "Audit de conformitate și due diligence",
+      heroTitle: "Due diligence de tranzacție pentru achiziții și intrarea pe piața din România",
       heroLede:
-        "Evaluare practică, dedicată și adaptată specificului fiecărui operator, realizată de colaboratori acreditați cu experiență națională și internațională în securitate, protecția datelor și tranzacții comerciale.",
-      ddEyebrow: "Tranzacții & Parteneriate",
-      ddTitle: "Due Diligence",
+        "Un proces de due diligence riguros, condus de o echipă multidisciplinară cu experiență națională și internațională — gândit ca o alternativă credibilă la marile firme de consultanță (Big Four), pentru investitori locali și străini deopotrivă.",
+      ddEyebrow: "Tranzacții & Achiziții",
+      ddTitle: "De ce contează un due diligence bine făcut",
+      audienceEyebrow: "Cui ne adresăm",
+      audienceTitle: "Profilul clienților noștri de due diligence",
+      areasEyebrow: "Perimetrul lucrării",
+      areasTitle: "Ariile de due diligence pe care le acoperim",
+      processEyebrow: "Metodologie",
+      processTitle: "Cum arată, în practică, un proces de due diligence",
+      deliverablesEyebrow: "Livrabile",
+      deliverablesTitle: "Ce primiți la finalul procesului",
+      differentiatorsEyebrow: "Diferențiatori",
+      differentiatorsTitle: "De ce să alegeți echipa noastră",
+      foreignEyebrow: "Pentru investitori străini",
+      complianceEyebrow: "Serviciu conex",
+      complianceTitle: "Audit de conformitate GDPR — etapele Regulamentului (UE) 2016/679",
       methodologyEyebrow: "Metodologie",
       methodologyTitle: "Etapele privind implementarea Regulamentului (UE) 2016/679",
       stagePrefix: "Etapa",
-      ctaText: "Ești interesat de oferta noastră pentru audit sau due diligence?",
+      ctaText: "Aveți în plan o achiziție în România sau un proces de due diligence? Discutăm confidențial perimetrul lucrării.",
       ctaButton: "Cerere ofertă",
     },
     dpo: {
@@ -492,15 +518,28 @@ export const ui: { ro: UiDict; en: UiDict } = {
     },
     audit: {
       heroEyebrow: "Audit & Due Diligence",
-      heroTitle: "Compliance audit and due diligence",
+      heroTitle: "Transaction due diligence for acquisitions and market entry into Romania",
       heroLede:
-        "A practical assessment, dedicated and tailored to each operator's specifics, carried out by accredited partners with national and international experience in security, data protection and commercial transactions.",
-      ddEyebrow: "Transactions & Partnerships",
-      ddTitle: "Due Diligence",
+        "A rigorous due diligence process, led by a multidisciplinary team with national and international experience — built as a credible alternative to the large consulting firms (Big Four), for local and foreign investors alike.",
+      ddEyebrow: "Transactions & Acquisitions",
+      ddTitle: "Why good due diligence matters",
+      audienceEyebrow: "Who we work with",
+      audienceTitle: "The profile of our due diligence clients",
+      areasEyebrow: "Scope of work",
+      areasTitle: "The due diligence areas we cover",
+      processEyebrow: "Methodology",
+      processTitle: "What a due diligence process looks like in practice",
+      deliverablesEyebrow: "Deliverables",
+      deliverablesTitle: "What you receive at the end of the process",
+      differentiatorsEyebrow: "Differentiators",
+      differentiatorsTitle: "Why choose our team",
+      foreignEyebrow: "For foreign investors",
+      complianceEyebrow: "Related service",
+      complianceTitle: "GDPR compliance audit — the stages of Regulation (EU) 2016/679",
       methodologyEyebrow: "Methodology",
       methodologyTitle: "Stages in implementing Regulation (EU) 2016/679",
       stagePrefix: "Stage",
-      ctaText: "Interested in our audit or due diligence offering?",
+      ctaText: "Planning an acquisition in Romania, or a due diligence process? Let's discuss the scope, in confidence.",
       ctaButton: "Request a quote",
     },
     dpo: {
