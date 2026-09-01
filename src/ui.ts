@@ -37,6 +37,27 @@ export interface UiDict {
     viewAllCourses: string
     closingTitle: string
     closingCta: string
+    viewAllServices: string
+  }
+  servicii: {
+    heroEyebrow: string
+    heroTitle: string
+    heroLede: string
+    detailsLabel: string
+    sectorsEyebrow: string
+    sectorsTitle: string
+    sectorsBody: string
+    sectorsLink: string
+    resourcesEyebrow: string
+    resourcesTitle: string
+    resourcesBody: string
+    resourcesLink: string
+    teamEyebrow: string
+    teamTitle: string
+    teamBody: string
+    teamLink: string
+    ctaText: string
+    ctaButton: string
   }
   consultanta: {
     heroEyebrow: string
@@ -189,6 +210,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
   ro: {
     nav: {
       links: [
+        "Servicii",
         "Securitate Cibernetică",
         "Guvernanță AI & Risc",
         "Audit & Due Diligence",
@@ -205,6 +227,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
     },
     footer: {
       links: [
+        "Servicii",
         "Securitate Cibernetică",
         "Guvernanță AI & Risc",
         "Audit & Due Diligence",
@@ -248,6 +271,29 @@ export const ui: { ro: UiDict; en: UiDict } = {
       viewAllCourses: "Vezi toate cursurile",
       closingTitle: "Ești interesat de oferta noastră pentru audit?",
       closingCta: "Cerere ofertă",
+      viewAllServices: "Vezi portofoliul complet de servicii",
+    },
+    servicii: {
+      heroEyebrow: "Servicii",
+      heroTitle: "Portofoliul complet de servicii",
+      heroLede:
+        "De la securitate cibernetică și guvernanța inteligenței artificiale, la protecția datelor, audit de tranzacție și consultanță juridică — o singură echipă, o singură strategie de conformitate, gândită ca alternativă credibilă la marile firme de consultanță (Big Four).",
+      detailsLabel: "Detalii",
+      sectorsEyebrow: "Sectoare deservite",
+      sectorsTitle: "Formare și consultanță adaptate domeniului dumneavoastră",
+      sectorsBody:
+        "HR & financiar-contabil, IT, sănătate, construcții, retail și sector public — programe de formare și conformitate adaptate fluxurilor reale ale fiecărui sector.",
+      sectorsLink: "Vezi programele de formare",
+      resourcesEyebrow: "Resurse legislative",
+      resourcesTitle: "Cadrul european pe care îl monitorizăm",
+      resourcesBody: "GDPR, NIS2, AI Act și Data Act — reperele legislative europene la care ne raportăm în activitatea de zi cu zi.",
+      resourcesLink: "Vezi resursele legislative",
+      teamEyebrow: "Echipă",
+      teamTitle: "Oamenii din spatele serviciilor",
+      teamBody: "O echipă multidisciplinară, cu experiență juridică, tehnică și de conformitate la nivel național și internațional.",
+      teamLink: "Cunoașteți echipa",
+      ctaText: "Aveți nevoie de unul sau mai multe dintre aceste servicii? Discutăm confidențial despre proiectul dumneavoastră.",
+      ctaButton: "Cerere ofertă",
     },
     consultanta: {
       heroEyebrow: "Consultanță GDPR",
@@ -305,7 +351,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
       structureEyebrow: "Structură",
       structureTitle: "Departamentul Juridic pe arii de practică",
       structureBody:
-        "Coordonat de Ruxandra Costea-Comanici, Departamentul Juridic funcționează alături de Departamentul GDPR și Departamentul IT Security ale grupului, organizat pe următoarele arii de practică:",
+        "Coordonat de Ruxandra Costea, Departamentul Juridic funcționează alături de Departamentul GDPR și Departamentul IT Security ale grupului, organizat pe următoarele arii de practică:",
       timelineEyebrow: "Traseu profesional",
       timelineTitle: "25 de ani de experiență la cel mai înalt nivel",
       educationEyebrow: "Formare",
@@ -438,6 +484,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
   en: {
     nav: {
       links: [
+        "Services",
         "Cybersecurity",
         "AI Governance & Risk",
         "Audit & Due Diligence",
@@ -454,6 +501,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
     },
     footer: {
       links: [
+        "Services",
         "Cybersecurity",
         "AI Governance & Risk",
         "Audit & Due Diligence",
@@ -497,6 +545,29 @@ export const ui: { ro: UiDict; en: UiDict } = {
       viewAllCourses: "View all courses",
       closingTitle: "Interested in our audit offering?",
       closingCta: "Request a quote",
+      viewAllServices: "View our full service portfolio",
+    },
+    servicii: {
+      heroEyebrow: "Services",
+      heroTitle: "Our Full Service Portfolio",
+      heroLede:
+        "From cybersecurity and AI governance, to data protection, transaction due diligence and legal consulting — one team, one compliance strategy, built as a credible alternative to the large consulting firms (Big Four).",
+      detailsLabel: "Details",
+      sectorsEyebrow: "Sectors we serve",
+      sectorsTitle: "Training and consulting tailored to your field",
+      sectorsBody:
+        "HR & finance, IT, healthcare, construction, retail and the public sector — training and compliance programs tailored to each sector's real workflows.",
+      sectorsLink: "See our training programs",
+      resourcesEyebrow: "Legislative resources",
+      resourcesTitle: "The European framework we monitor",
+      resourcesBody: "GDPR, NIS2, the AI Act and the Data Act — the European legislative benchmarks that guide our day-to-day work.",
+      resourcesLink: "See our legislative resources",
+      teamEyebrow: "Team",
+      teamTitle: "The people behind our services",
+      teamBody: "A multidisciplinary team, with legal, technical and compliance experience at national and international level.",
+      teamLink: "Meet the team",
+      ctaText: "Need one or more of these services? Let's discuss your project, in confidence.",
+      ctaButton: "Request a quote",
     },
     consultanta: {
       heroEyebrow: "GDPR Consulting",
@@ -554,7 +625,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
       structureEyebrow: "Structure",
       structureTitle: "The Legal Department by practice area",
       structureBody:
-        "Headed by Ruxandra Costea-Comanici, the Legal Department operates alongside the group's GDPR Department and IT Security Department, organized into the following practice areas:",
+        "Headed by Ruxandra Costea, the Legal Department operates alongside the group's GDPR Department and IT Security Department, organized into the following practice areas:",
       timelineEyebrow: "Career path",
       timelineTitle: "25 years of experience at the highest level",
       educationEyebrow: "Education",

@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import Home from "./pages/Home"
+import Servicii from "./pages/Servicii"
 import Consultanta from "./pages/Consultanta"
 import Audit from "./pages/Audit"
 import DPO from "./pages/DPO"
@@ -33,6 +34,7 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/servicii" element={<Servicii />} />
             <Route path="/consultanta" element={<Consultanta />} />
             <Route path="/audit" element={<Audit />} />
             <Route path="/dpo" element={<DPO />} />
@@ -46,6 +48,7 @@ export default function App() {
             <Route path="/confidentialitate" element={<Confidentialitate />} />
 
             <Route path="/en" element={<Home />} />
+            <Route path="/en/servicii" element={<Servicii />} />
             <Route path="/en/consultanta" element={<Consultanta />} />
             <Route path="/en/audit" element={<Audit />} />
             <Route path="/en/dpo" element={<DPO />} />
