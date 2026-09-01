@@ -164,9 +164,44 @@ export interface UiDict {
     cyberTitle: string
     standardsEyebrow: string
     standardsTitle: string
+    riskEyebrow: string
+    riskTitle: string
+    riskBody: string
+    riskLinkLabel: string
     resourcesEyebrow: string
     resourcesTitle: string
     resourcesBody: string
+  }
+  managementulRiscurilor: {
+    heroEyebrow: string
+    heroTitle: string
+    typesEyebrow: string
+    typesTitle: string
+    registerEyebrow: string
+    registerTitle: string
+    registerBody: string
+    methodologyEyebrow: string
+    methodologyTitle: string
+    frameworkEyebrow: string
+    frameworkTitle: string
+    integrationEyebrow: string
+    integrationTitle: string
+    matrixEyebrow: string
+    matrixTitle: string
+    matrixImpactLabel: string
+    matrixProbabilityLabel: string
+    matrixLow: string
+    matrixMedium: string
+    matrixHigh: string
+    matrixAccept: string
+    matrixMonitor: string
+    matrixReduce: string
+    matrixReducePriority: string
+    matrixEliminate: string
+    benefitsEyebrow: string
+    benefitsTitle: string
+    ctaText: string
+    ctaButton: string
   }
   echipa: {
     heroEyebrow: string
@@ -213,6 +248,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
         "Servicii",
         "Securitate Cibernetică",
         "Guvernanță AI & Risc",
+        "Managementul Riscurilor",
         "Audit & Due Diligence",
         "Consultanță GDPR",
         "DPO",
@@ -230,6 +266,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
         "Servicii",
         "Securitate Cibernetică",
         "Guvernanță AI & Risc",
+        "Managementul Riscurilor",
         "Audit & Due Diligence",
         "Consultanță GDPR",
         "DPO",
@@ -411,9 +448,46 @@ export const ui: { ro: UiDict; en: UiDict } = {
       cyberTitle: "NIS2",
       standardsEyebrow: "Standarde",
       standardsTitle: "Cadrul ISO de guvernanță și risc",
+      riskEyebrow: "Managementul Riscurilor",
+      riskTitle: "Un cadru unitar pentru toate riscurile",
+      riskBody:
+        "Riscurile juridice, IT, operaționale și reputaționale sunt gestionate printr-un singur registru de risc, structurat pe standardul ISO 31000 — cu metodologie proprie de identificare, evaluare, tratare și monitorizare.",
+      riskLinkLabel: "Vezi metodologia completă",
       resourcesEyebrow: "Resurse",
       resourcesTitle: "Repere legislative europene",
       resourcesBody: "Textele oficiale pe care le monitorizăm și pe care ne întemeiem analiza juridică și tehnică.",
+    },
+    managementulRiscurilor: {
+      heroEyebrow: "Managementul Riscurilor",
+      heroTitle: "Managementul Integrat al Riscurilor",
+      typesEyebrow: "Abordare multidimensională",
+      typesTitle: "Patru tipuri de risc, un singur cadru",
+      registerEyebrow: "Registru unic",
+      registerTitle: "Un singur registru de risc, pentru toată organizația",
+      registerBody:
+        "Registrul centralizează toate riscurile identificate, indiferent de natura lor, cu informații privind tipul de risc, probabilitatea de apariție, impactul potențial și măsurile de control — pentru o imagine de ansamblu asupra expunerii organizației.",
+      methodologyEyebrow: "Metodologie",
+      methodologyTitle: "Procesul de management al riscului",
+      frameworkEyebrow: "Standard internațional",
+      frameworkTitle: "Cadrul ISO 31000:2018",
+      integrationEyebrow: "Integrare",
+      integrationTitle: "Un cadru comun pentru cinci dimensiuni de risc",
+      matrixEyebrow: "Instrument practic",
+      matrixTitle: "Matricea de tratament a riscului",
+      matrixImpactLabel: "Impact",
+      matrixProbabilityLabel: "Probabilitate",
+      matrixLow: "Scăzută",
+      matrixMedium: "Medie",
+      matrixHigh: "Ridicată",
+      matrixAccept: "Acceptare",
+      matrixMonitor: "Monitorizare",
+      matrixReduce: "Reducere",
+      matrixReducePriority: "Reducere prioritară",
+      matrixEliminate: "Eliminare / transfer",
+      benefitsEyebrow: "Beneficii",
+      benefitsTitle: "De ce un model unificat de risc",
+      ctaText: "Vreți o evaluare a expunerii la risc a organizației dumneavoastră?",
+      ctaButton: "Cerere ofertă",
     },
     echipa: {
       heroEyebrow: "Echipă",
@@ -487,6 +561,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
         "Services",
         "Cybersecurity",
         "AI Governance & Risk",
+        "Risk Management",
         "Audit & Due Diligence",
         "GDPR Consulting",
         "DPO",
@@ -504,6 +579,7 @@ export const ui: { ro: UiDict; en: UiDict } = {
         "Services",
         "Cybersecurity",
         "AI Governance & Risk",
+        "Risk Management",
         "Audit & Due Diligence",
         "GDPR Consulting",
         "DPO",
@@ -685,9 +761,46 @@ export const ui: { ro: UiDict; en: UiDict } = {
       cyberTitle: "NIS2",
       standardsEyebrow: "Standards",
       standardsTitle: "The ISO governance and risk framework",
+      riskEyebrow: "Risk Management",
+      riskTitle: "One framework for every risk",
+      riskBody:
+        "Legal, IT, operational and reputational risks are managed through a single risk register, structured on the ISO 31000 standard — with our own methodology for identification, assessment, treatment and monitoring.",
+      riskLinkLabel: "See the full methodology",
       resourcesEyebrow: "Resources",
       resourcesTitle: "Key European legislation",
       resourcesBody: "The official texts we monitor and on which we base our legal and technical analysis.",
+    },
+    managementulRiscurilor: {
+      heroEyebrow: "Risk Management",
+      heroTitle: "Integrated Risk Management",
+      typesEyebrow: "A multidimensional approach",
+      typesTitle: "Four types of risk, one framework",
+      registerEyebrow: "Unified register",
+      registerTitle: "A single risk register for the whole organisation",
+      registerBody:
+        "The register centralises every identified risk, regardless of its nature, recording the risk type, likelihood, potential impact and control measures — giving a complete picture of the organisation's exposure.",
+      methodologyEyebrow: "Methodology",
+      methodologyTitle: "The risk management process",
+      frameworkEyebrow: "International standard",
+      frameworkTitle: "The ISO 31000:2018 framework",
+      integrationEyebrow: "Integration",
+      integrationTitle: "One shared framework for five risk dimensions",
+      matrixEyebrow: "Practical tool",
+      matrixTitle: "The risk treatment matrix",
+      matrixImpactLabel: "Impact",
+      matrixProbabilityLabel: "Likelihood",
+      matrixLow: "Low",
+      matrixMedium: "Medium",
+      matrixHigh: "High",
+      matrixAccept: "Acceptance",
+      matrixMonitor: "Monitoring",
+      matrixReduce: "Reduction",
+      matrixReducePriority: "Priority reduction",
+      matrixEliminate: "Elimination / transfer",
+      benefitsEyebrow: "Benefits",
+      benefitsTitle: "Why a unified risk model",
+      ctaText: "Want an assessment of your organisation's risk exposure?",
+      ctaButton: "Request a quote",
     },
     echipa: {
       heroEyebrow: "Team",

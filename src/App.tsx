@@ -15,6 +15,7 @@ import Echipa from "./pages/Echipa"
 import Contact from "./pages/Contact"
 import Confidentialitate from "./pages/Confidentialitate"
 import GuvernantaDigitala from "./pages/GuvernantaDigitala"
+import ManagementulRiscurilor from "./pages/ManagementulRiscurilor"
 import { LocaleProvider } from "./LocaleContext"
 
 function ScrollToTop() {
@@ -43,6 +44,7 @@ export default function App() {
             <Route path="/cursuri" element={<Cursuri />} />
             <Route path="/evenimente" element={<Evenimente />} />
             <Route path="/guvernanta-digitala" element={<GuvernantaDigitala />} />
+            <Route path="/managementul-riscurilor" element={<ManagementulRiscurilor />} />
             <Route path="/echipa" element={<Echipa />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/confidentialitate" element={<Confidentialitate />} />
@@ -57,6 +59,7 @@ export default function App() {
             <Route path="/en/cursuri" element={<Cursuri />} />
             <Route path="/en/evenimente" element={<Evenimente />} />
             <Route path="/en/guvernanta-digitala" element={<GuvernantaDigitala />} />
+            <Route path="/en/managementul-riscurilor" element={<ManagementulRiscurilor />} />
             <Route path="/en/echipa" element={<Echipa />} />
             <Route path="/en/contact" element={<Contact />} />
             <Route path="/en/confidentialitate" element={<Confidentialitate />} />
