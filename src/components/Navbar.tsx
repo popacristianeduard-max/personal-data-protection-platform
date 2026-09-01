@@ -6,6 +6,7 @@ import { useLocale, localizePath, stripLocalePrefix } from "../LocaleContext"
 import { ui } from "../ui"
 
 const navPaths = [
+  "/servicii",
   "/it-security",
   "/guvernanta-digitala",
   "/audit",

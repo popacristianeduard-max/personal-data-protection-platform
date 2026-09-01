@@ -5,6 +5,7 @@ import { useLocale, useContent, localizePath } from "../LocaleContext"
 import { ui } from "../ui"
 
 const quickPaths = [
+  "/servicii",
   "/it-security",
   "/guvernanta-digitala",
   "/audit",
